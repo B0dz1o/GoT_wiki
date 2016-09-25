@@ -1,0 +1,17 @@
+PODS:
+  - JSONModel (1.5.1)
+  - Realm (1.1.0):
+    - Realm/Headers (= 1.1.0)
+  - Realm/Headers (1.1.0)
+
+DEPENDENCIES:
+  - JSONModel (~> 1.5.1)
+  - Realm (~> 1.1.0)
+
+SPEC CHECKSUMS:
+  JSONModel: fd2553dc9e6608a3f35bfc956a14be35395d3852
+  Realm: ceecf1a4540c4ce9efe196fe73fa9855bce05bd8
+
+PODFILE CHECKSUM: d935bd8c50babe9d07b3bb080b14860e31f3653a
+
+COCOAPODS: 1.0.1
