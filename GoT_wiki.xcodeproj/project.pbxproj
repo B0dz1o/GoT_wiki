@@ -10,13 +10,11 @@
 		2B963EBAE50E47767FD2B4D2 /* libPods-GoT_wikiTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 21325498AEFD103A0FE6F667 /* libPods-GoT_wikiTests.a */; };
 		671DCBEF1D986AFC00457F95 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 671DCBEE1D986AFC00457F95 /* main.m */; };
 		671DCBF21D986AFC00457F95 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 671DCBF11D986AFC00457F95 /* AppDelegate.m */; };
-		671DCBF51D986AFC00457F95 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 671DCBF41D986AFC00457F95 /* MasterViewController.m */; };
-		671DCBF81D986AFC00457F95 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 671DCBF71D986AFC00457F95 /* DetailViewController.m */; };
-		671DCBFB1D986AFC00457F95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 671DCBF91D986AFC00457F95 /* Main.storyboard */; };
 		671DCBFD1D986AFC00457F95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 671DCBFC1D986AFC00457F95 /* Assets.xcassets */; };
-		671DCC001D986AFC00457F95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 671DCBFE1D986AFC00457F95 /* LaunchScreen.storyboard */; };
 		671DCC0B1D986AFC00457F95 /* GoT_wikiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 671DCC0A1D986AFC00457F95 /* GoT_wikiTests.m */; };
 		671DCC161D986AFC00457F95 /* GoT_wikiUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 671DCC151D986AFC00457F95 /* GoT_wikiUITests.m */; };
+		67D3C0251D9AEA2700CD5554 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D3C0231D9AEA2700CD5554 /* HomeViewController.m */; };
+		67D3C0261D9AEA2700CD5554 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67D3C0241D9AEA2700CD5554 /* HomeViewController.xib */; };
 		D74FAD24C9B5F97C904EA35D /* libPods-GoT_wiki.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F423F887D0AD595A882A27D /* libPods-GoT_wiki.a */; };
 		E779471E69A42BB57DF900B0 /* libPods-GoT_wikiUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F053F02583896A7B0E7DF4B2 /* libPods-GoT_wikiUITests.a */; };
 /* End PBXBuildFile section */
@@ -47,13 +45,7 @@
 		671DCBEE1D986AFC00457F95 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		671DCBF01D986AFC00457F95 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		671DCBF11D986AFC00457F95 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		671DCBF31D986AFC00457F95 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		671DCBF41D986AFC00457F95 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		671DCBF61D986AFC00457F95 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		671DCBF71D986AFC00457F95 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
-		671DCBFA1D986AFC00457F95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		671DCBFC1D986AFC00457F95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		671DCBFF1D986AFC00457F95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		671DCC011D986AFC00457F95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		671DCC061D986AFC00457F95 /* GoT_wikiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoT_wikiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		671DCC0A1D986AFC00457F95 /* GoT_wikiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoT_wikiTests.m; sourceTree = "<group>"; };
@@ -61,6 +53,9 @@
 		671DCC111D986AFC00457F95 /* GoT_wikiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoT_wikiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		671DCC151D986AFC00457F95 /* GoT_wikiUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoT_wikiUITests.m; sourceTree = "<group>"; };
 		671DCC171D986AFC00457F95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67D3C0221D9AEA2700CD5554 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = Sources/Views/Home/HomeViewController.h; sourceTree = "<group>"; };
+		67D3C0231D9AEA2700CD5554 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = Sources/Views/Home/HomeViewController.m; sourceTree = "<group>"; };
+		67D3C0241D9AEA2700CD5554 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HomeViewController.xib; path = Sources/Views/Home/HomeViewController.xib; sourceTree = "<group>"; };
 		69DF9FF8F0CAABD7A620529B /* Pods-GoT_wikiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoT_wikiUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoT_wikiUITests/Pods-GoT_wikiUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7FE02E53BAD82E13CCA44F57 /* Pods-GoT_wiki.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoT_wiki.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoT_wiki/Pods-GoT_wiki.release.xcconfig"; sourceTree = "<group>"; };
 		B88AD4BB4A910460DECAE843 /* Pods-GoT_wikiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoT_wikiTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoT_wikiTests/Pods-GoT_wikiTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -131,15 +126,10 @@
 		671DCBEC1D986AFC00457F95 /* GoT_wiki */ = {
 			isa = PBXGroup;
 			children = (
+				67D3C01D1D9AE90500CD5554 /* Sources */,
 				671DCBF01D986AFC00457F95 /* AppDelegate.h */,
 				671DCBF11D986AFC00457F95 /* AppDelegate.m */,
-				671DCBF31D986AFC00457F95 /* MasterViewController.h */,
-				671DCBF41D986AFC00457F95 /* MasterViewController.m */,
-				671DCBF61D986AFC00457F95 /* DetailViewController.h */,
-				671DCBF71D986AFC00457F95 /* DetailViewController.m */,
-				671DCBF91D986AFC00457F95 /* Main.storyboard */,
 				671DCBFC1D986AFC00457F95 /* Assets.xcassets */,
-				671DCBFE1D986AFC00457F95 /* LaunchScreen.storyboard */,
 				671DCC011D986AFC00457F95 /* Info.plist */,
 				671DCBED1D986AFC00457F95 /* Supporting Files */,
 			);
@@ -170,6 +160,32 @@
 				671DCC171D986AFC00457F95 /* Info.plist */,
 			);
 			path = GoT_wikiUITests;
+			sourceTree = "<group>";
+		};
+		67D3C01D1D9AE90500CD5554 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				67D3C01F1D9AE9B900CD5554 /* Views */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		67D3C01F1D9AE9B900CD5554 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				67D3C0271D9AEA4400CD5554 /* Home */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		67D3C0271D9AEA4400CD5554 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				67D3C0221D9AEA2700CD5554 /* HomeViewController.h */,
+				67D3C0231D9AEA2700CD5554 /* HomeViewController.m */,
+				67D3C0241D9AEA2700CD5554 /* HomeViewController.xib */,
+			);
+			name = Home;
 			sourceTree = "<group>";
 		};
 		DFC068C805B6082A0AF11F26 /* Pods */ = {
@@ -296,9 +312,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				671DCC001D986AFC00457F95 /* LaunchScreen.storyboard in Resources */,
 				671DCBFD1D986AFC00457F95 /* Assets.xcassets in Resources */,
-				671DCBFB1D986AFC00457F95 /* Main.storyboard in Resources */,
+				67D3C0261D9AEA2700CD5554 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,9 +462,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				671DCBF21D986AFC00457F95 /* AppDelegate.m in Sources */,
-				671DCBF51D986AFC00457F95 /* MasterViewController.m in Sources */,
 				671DCBEF1D986AFC00457F95 /* main.m in Sources */,
-				671DCBF81D986AFC00457F95 /* DetailViewController.m in Sources */,
+				67D3C0251D9AEA2700CD5554 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,25 +497,6 @@
 			targetProxy = 671DCC121D986AFC00457F95 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		671DCBF91D986AFC00457F95 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				671DCBFA1D986AFC00457F95 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		671DCBFE1D986AFC00457F95 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				671DCBFF1D986AFC00457F95 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		671DCC181D986AFC00457F95 /* Debug */ = {
@@ -592,6 +587,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GoT_wiki/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.b0dz1o.GoT-wiki";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -604,6 +600,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GoT_wiki/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.b0dz1o.GoT-wiki";
 				PRODUCT_NAME = "$(TARGET_NAME)";
