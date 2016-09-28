@@ -9,7 +9,7 @@ branches:
     - develop
     - /^release\/[\w\.]+$/
 install:
-  - pod repo update
+#  - pod repo update
   - pod install
 after_success:
   - bash <(curl -s https://codecov.io/bash)

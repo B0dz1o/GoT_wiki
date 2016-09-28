@@ -11,7 +11,11 @@
 
 @interface RequestFactory : NSObject
 
-///GoT wiki request types. Enum starts with 1 to catch nil argument passing.
+/**GoT wiki request types. 
+ 
+ Enum starts with 1 to catch nil argument passing.
+ @field CHARACTER_LIST Get top articles concerning certain characters
+ */
 typedef enum {
     CHARACTER_LIST = 1
 } RequestTypes;
@@ -21,7 +25,11 @@ typedef enum {
 
 ///Singleton access method
 +(instancetype) sharedObject;
-///Abstract layer around server communication access
+/**Abstract layer around server communication access
+ @param type API call identifier
+ @param handler Block to make use of server reponse data or error
+ @returns Data task object to be called
+ */
 -(NSURLSessionDataTask *) runTask: (RequestTypes) type
                          withHandler:(void (^)(NSData*, NSURLResponse*, NSError*)) handler;
 
