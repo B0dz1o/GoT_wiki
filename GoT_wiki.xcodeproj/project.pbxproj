@@ -11,10 +11,13 @@
 		671DCBEF1D986AFC00457F95 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 671DCBEE1D986AFC00457F95 /* main.m */; };
 		671DCBF21D986AFC00457F95 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 671DCBF11D986AFC00457F95 /* AppDelegate.m */; };
 		671DCBFD1D986AFC00457F95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 671DCBFC1D986AFC00457F95 /* Assets.xcassets */; };
-		671DCC0B1D986AFC00457F95 /* GoT_wikiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 671DCC0A1D986AFC00457F95 /* GoT_wikiTests.m */; };
+		671DCC0B1D986AFC00457F95 /* NetworkingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 671DCC0A1D986AFC00457F95 /* NetworkingTest.m */; };
 		671DCC161D986AFC00457F95 /* GoT_wikiUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 671DCC151D986AFC00457F95 /* GoT_wikiUITests.m */; };
+		676730F41D9BFF37003E1F81 /* HTTPBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 676730F31D9BFF37003E1F81 /* HTTPBuilder.m */; };
 		67D3C0251D9AEA2700CD5554 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D3C0231D9AEA2700CD5554 /* HomeViewController.m */; };
 		67D3C0261D9AEA2700CD5554 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67D3C0241D9AEA2700CD5554 /* HomeViewController.xib */; };
+		67D3C02D1D9AFF5C00CD5554 /* RequestFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D3C02C1D9AFF5C00CD5554 /* RequestFactory.m */; };
+		67D3C0311D9B03F800CD5554 /* CharacterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D3C0301D9B03F800CD5554 /* CharacterModel.m */; };
 		D74FAD24C9B5F97C904EA35D /* libPods-GoT_wiki.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F423F887D0AD595A882A27D /* libPods-GoT_wiki.a */; };
 		E779471E69A42BB57DF900B0 /* libPods-GoT_wikiUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F053F02583896A7B0E7DF4B2 /* libPods-GoT_wikiUITests.a */; };
 /* End PBXBuildFile section */
@@ -48,14 +51,20 @@
 		671DCBFC1D986AFC00457F95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		671DCC011D986AFC00457F95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		671DCC061D986AFC00457F95 /* GoT_wikiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoT_wikiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		671DCC0A1D986AFC00457F95 /* GoT_wikiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoT_wikiTests.m; sourceTree = "<group>"; };
+		671DCC0A1D986AFC00457F95 /* NetworkingTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkingTest.m; sourceTree = "<group>"; };
 		671DCC0C1D986AFC00457F95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		671DCC111D986AFC00457F95 /* GoT_wikiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoT_wikiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		671DCC151D986AFC00457F95 /* GoT_wikiUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoT_wikiUITests.m; sourceTree = "<group>"; };
 		671DCC171D986AFC00457F95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		676730F21D9BFF37003E1F81 /* HTTPBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTTPBuilder.h; path = Sources/Networking/HTTPBuilder.h; sourceTree = "<group>"; };
+		676730F31D9BFF37003E1F81 /* HTTPBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTTPBuilder.m; path = Sources/Networking/HTTPBuilder.m; sourceTree = "<group>"; };
 		67D3C0221D9AEA2700CD5554 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = Sources/Views/Home/HomeViewController.h; sourceTree = "<group>"; };
 		67D3C0231D9AEA2700CD5554 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = Sources/Views/Home/HomeViewController.m; sourceTree = "<group>"; };
 		67D3C0241D9AEA2700CD5554 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HomeViewController.xib; path = Sources/Views/Home/HomeViewController.xib; sourceTree = "<group>"; };
+		67D3C02B1D9AFF5C00CD5554 /* RequestFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RequestFactory.h; path = Sources/Networking/RequestFactory.h; sourceTree = "<group>"; };
+		67D3C02C1D9AFF5C00CD5554 /* RequestFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RequestFactory.m; path = Sources/Networking/RequestFactory.m; sourceTree = "<group>"; };
+		67D3C02F1D9B03F800CD5554 /* CharacterModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CharacterModel.h; path = Sources/Models/CharacterModel.h; sourceTree = "<group>"; };
+		67D3C0301D9B03F800CD5554 /* CharacterModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CharacterModel.m; path = Sources/Models/CharacterModel.m; sourceTree = "<group>"; };
 		69DF9FF8F0CAABD7A620529B /* Pods-GoT_wikiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoT_wikiUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoT_wikiUITests/Pods-GoT_wikiUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7FE02E53BAD82E13CCA44F57 /* Pods-GoT_wiki.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoT_wiki.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoT_wiki/Pods-GoT_wiki.release.xcconfig"; sourceTree = "<group>"; };
 		B88AD4BB4A910460DECAE843 /* Pods-GoT_wikiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoT_wikiTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoT_wikiTests/Pods-GoT_wikiTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -147,7 +156,7 @@
 		671DCC091D986AFC00457F95 /* GoT_wikiTests */ = {
 			isa = PBXGroup;
 			children = (
-				671DCC0A1D986AFC00457F95 /* GoT_wikiTests.m */,
+				671DCC0A1D986AFC00457F95 /* NetworkingTest.m */,
 				671DCC0C1D986AFC00457F95 /* Info.plist */,
 			);
 			path = GoT_wikiTests;
@@ -165,6 +174,8 @@
 		67D3C01D1D9AE90500CD5554 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				67D3C02E1D9B03D000CD5554 /* Models */,
+				67D3C02A1D9AFCC200CD5554 /* Networking */,
 				67D3C01F1D9AE9B900CD5554 /* Views */,
 			);
 			name = Sources;
@@ -186,6 +197,26 @@
 				67D3C0241D9AEA2700CD5554 /* HomeViewController.xib */,
 			);
 			name = Home;
+			sourceTree = "<group>";
+		};
+		67D3C02A1D9AFCC200CD5554 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				67D3C02B1D9AFF5C00CD5554 /* RequestFactory.h */,
+				67D3C02C1D9AFF5C00CD5554 /* RequestFactory.m */,
+				676730F21D9BFF37003E1F81 /* HTTPBuilder.h */,
+				676730F31D9BFF37003E1F81 /* HTTPBuilder.m */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		67D3C02E1D9B03D000CD5554 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				67D3C02F1D9B03F800CD5554 /* CharacterModel.h */,
+				67D3C0301D9B03F800CD5554 /* CharacterModel.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		DFC068C805B6082A0AF11F26 /* Pods */ = {
@@ -461,8 +492,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67D3C02D1D9AFF5C00CD5554 /* RequestFactory.m in Sources */,
+				676730F41D9BFF37003E1F81 /* HTTPBuilder.m in Sources */,
 				671DCBF21D986AFC00457F95 /* AppDelegate.m in Sources */,
 				671DCBEF1D986AFC00457F95 /* main.m in Sources */,
+				67D3C0311D9B03F800CD5554 /* CharacterModel.m in Sources */,
 				67D3C0251D9AEA2700CD5554 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -471,7 +505,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				671DCC0B1D986AFC00457F95 /* GoT_wikiTests.m in Sources */,
+				671DCC0B1D986AFC00457F95 /* NetworkingTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

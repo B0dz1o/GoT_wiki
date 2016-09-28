@@ -1,18 +1,19 @@
 //
-//  GoT_wikiTests.m
-//  GoT_wikiTests
+//  NetworkingTest.m
+//  NetworkingTest
 //
 //  Created by Piotr Bogdan on 9/25/16.
 //  Copyright © 2016 Piotr Bogdan. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
+#import "CharacterModel.h"
 
-@interface GoT_wikiTests : XCTestCase
+@interface NetworkingTest : XCTestCase
 
 @end
 
-@implementation GoT_wikiTests
+@implementation NetworkingTest
 
 - (void)setUp {
     [super setUp];
