@@ -10,6 +10,15 @@
 
 @interface HTTPBuilder : NSObject
 
+@property NSString *baseURL;
+@property NSString *path;
+@property NSString *paramsString;
+@property void (^requestHandler)(NSData *, NSURLResponse *, NSError *);
+
+
 -(NSURLSessionDataTask *) buildTask;
+-(HTTPBuilder *) useDefaultBaseURL;
+-(HTTPBuilder *) useParameters: (NSDictionary<NSString *, NSString *> *) params;
+-(HTTPBuilder *) usePath: (NSString *) path;
 
 @end

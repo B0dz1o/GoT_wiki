@@ -11,14 +11,18 @@
 
 @interface RequestFactory : NSObject
 
+///GoT wiki request types. Enum starts with 1 to catch nil argument passing.
 typedef enum {
-    CharactersList
+    CHARACTER_LIST = 1
 } RequestTypes;
 
-@property (weak) HTTPBuilder *builder;
+///Builder layer around NSURLSession initialization
+@property HTTPBuilder *builder;
 
+///Singleton access method
 +(instancetype) sharedObject;
--(NSURLSessionDataTask *) createTask: (RequestTypes) type
+///Abstract layer around server communication access
+-(NSURLSessionDataTask *) runTask: (RequestTypes) type
                          withHandler:(void (^)(NSData*, NSURLResponse*, NSError*)) handler;
 
 @end
