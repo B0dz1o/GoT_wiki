@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2B963EBAE50E47767FD2B4D2 /* libPods-GoT_wikiTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 21325498AEFD103A0FE6F667 /* libPods-GoT_wikiTests.a */; };
-		46B5EAFC7001F0E0751A2485 /* libPods-GoT_wiki-GoT_wikiUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB695ED6991CC8A26D8F58D6 /* libPods-GoT_wiki-GoT_wikiUITests.a */; };
+		14194AD027E81D11CDEB9347 /* libPods-GoT_wikiUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1021345B340D23775CD90B3F /* libPods-GoT_wikiUITests.a */; };
+		278BCE64E3B76EADE6B92BDE /* libPods-GoT_wiki.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC18A323775848EE7CDB0E27 /* libPods-GoT_wiki.a */; };
 		671DCBEF1D986AFC00457F95 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 671DCBEE1D986AFC00457F95 /* main.m */; };
 		671DCBF21D986AFC00457F95 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 671DCBF11D986AFC00457F95 /* AppDelegate.m */; };
 		671DCBFD1D986AFC00457F95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 671DCBFC1D986AFC00457F95 /* Assets.xcassets */; };
@@ -19,9 +19,7 @@
 		67D3C0261D9AEA2700CD5554 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67D3C0241D9AEA2700CD5554 /* HomeViewController.xib */; };
 		67D3C02D1D9AFF5C00CD5554 /* RequestFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D3C02C1D9AFF5C00CD5554 /* RequestFactory.m */; };
 		67D3C0311D9B03F800CD5554 /* CharacterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D3C0301D9B03F800CD5554 /* CharacterModel.m */; };
-		D74FAD24C9B5F97C904EA35D /* libPods-GoT_wiki.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F423F887D0AD595A882A27D /* libPods-GoT_wiki.a */; };
-		DE6FBB0AEF1161BEF39CE31A /* libPods-GoT_wiki-GoT_wikiTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A21AB846EFA7EB2577889FAF /* libPods-GoT_wiki-GoT_wikiTests.a */; };
-		E779471E69A42BB57DF900B0 /* libPods-GoT_wikiUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F053F02583896A7B0E7DF4B2 /* libPods-GoT_wikiUITests.a */; };
+		9E39F2C1EA36D4217722CE96 /* libPods-GoT_wikiTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 16D2191F8AB7E40CA57DCDD5 /* libPods-GoT_wikiTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,25 +40,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0D3FF4F87F345229AE7A3654 /* Pods-GoT_wiki-GoT_wikiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoT_wiki-GoT_wikiTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoT_wiki-GoT_wikiTests/Pods-GoT_wiki-GoT_wikiTests.debug.xcconfig"; sourceTree = "<group>"; };
-		1E95D675DDDB7811AACE96FB /* Pods-GoT_wikiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoT_wikiTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoT_wikiTests/Pods-GoT_wikiTests.release.xcconfig"; sourceTree = "<group>"; };
-		21325498AEFD103A0FE6F667 /* libPods-GoT_wikiTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoT_wikiTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F423F887D0AD595A882A27D /* libPods-GoT_wiki.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoT_wiki.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		57BA47AA12FA918DBB746387 /* Pods-GoT_wiki.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoT_wiki.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoT_wiki/Pods-GoT_wiki.debug.xcconfig"; sourceTree = "<group>"; };
-		671DCBEA1D986AFC00457F95 /* GoT_wiki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoT_wiki.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1021345B340D23775CD90B3F /* libPods-GoT_wikiUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoT_wikiUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		16D2191F8AB7E40CA57DCDD5 /* libPods-GoT_wikiTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoT_wikiTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		45E5196A8711B444D7D8CF6A /* Pods-GoT_wikiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoT_wikiUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoT_wikiUITests/Pods-GoT_wikiUITests.release.xcconfig"; sourceTree = "<group>"; };
 		671DCBEE1D986AFC00457F95 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		671DCBF01D986AFC00457F95 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		671DCBF11D986AFC00457F95 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		671DCBFC1D986AFC00457F95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		671DCC011D986AFC00457F95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		671DCC061D986AFC00457F95 /* GoT_wikiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoT_wikiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		671DCC0A1D986AFC00457F95 /* NetworkingTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkingTest.m; sourceTree = "<group>"; };
 		671DCC0C1D986AFC00457F95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		671DCC111D986AFC00457F95 /* GoT_wikiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoT_wikiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		671DCC151D986AFC00457F95 /* GoT_wikiUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoT_wikiUITests.m; sourceTree = "<group>"; };
 		671DCC171D986AFC00457F95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		676730F21D9BFF37003E1F81 /* HTTPBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTTPBuilder.h; path = Sources/Networking/HTTPBuilder.h; sourceTree = "<group>"; };
 		676730F31D9BFF37003E1F81 /* HTTPBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTTPBuilder.m; path = Sources/Networking/HTTPBuilder.m; sourceTree = "<group>"; };
+		677205AC1D9DE2950049D598 /* GoT_wiki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoT_wiki.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		677205AD1D9DE2950049D598 /* GoT_wikiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoT_wikiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		677205AE1D9DE2950049D598 /* GoT_wikiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoT_wikiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		67D3C0221D9AEA2700CD5554 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = Sources/Views/Home/HomeViewController.h; sourceTree = "<group>"; };
 		67D3C0231D9AEA2700CD5554 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = Sources/Views/Home/HomeViewController.m; sourceTree = "<group>"; };
 		67D3C0241D9AEA2700CD5554 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HomeViewController.xib; path = Sources/Views/Home/HomeViewController.xib; sourceTree = "<group>"; };
@@ -68,16 +64,12 @@
 		67D3C02C1D9AFF5C00CD5554 /* RequestFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RequestFactory.m; path = Sources/Networking/RequestFactory.m; sourceTree = "<group>"; };
 		67D3C02F1D9B03F800CD5554 /* CharacterModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CharacterModel.h; path = Sources/Models/CharacterModel.h; sourceTree = "<group>"; };
 		67D3C0301D9B03F800CD5554 /* CharacterModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CharacterModel.m; path = Sources/Models/CharacterModel.m; sourceTree = "<group>"; };
-		69DF9FF8F0CAABD7A620529B /* Pods-GoT_wikiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoT_wikiUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoT_wikiUITests/Pods-GoT_wikiUITests.release.xcconfig"; sourceTree = "<group>"; };
-		7FE02E53BAD82E13CCA44F57 /* Pods-GoT_wiki.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoT_wiki.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoT_wiki/Pods-GoT_wiki.release.xcconfig"; sourceTree = "<group>"; };
-		82D63FE0E538623FAC77AA2B /* Pods-GoT_wiki-GoT_wikiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoT_wiki-GoT_wikiUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoT_wiki-GoT_wikiUITests/Pods-GoT_wiki-GoT_wikiUITests.release.xcconfig"; sourceTree = "<group>"; };
-		A21AB846EFA7EB2577889FAF /* libPods-GoT_wiki-GoT_wikiTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoT_wiki-GoT_wikiTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AB695ED6991CC8A26D8F58D6 /* libPods-GoT_wiki-GoT_wikiUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoT_wiki-GoT_wikiUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B88AD4BB4A910460DECAE843 /* Pods-GoT_wikiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoT_wikiTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoT_wikiTests/Pods-GoT_wikiTests.debug.xcconfig"; sourceTree = "<group>"; };
-		BB27B4801407BA258E313B27 /* Pods-GoT_wiki-GoT_wikiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoT_wiki-GoT_wikiTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoT_wiki-GoT_wikiTests/Pods-GoT_wiki-GoT_wikiTests.release.xcconfig"; sourceTree = "<group>"; };
-		BDEB242B65F9DF9F6E115B75 /* Pods-GoT_wiki-GoT_wikiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoT_wiki-GoT_wikiUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoT_wiki-GoT_wikiUITests/Pods-GoT_wiki-GoT_wikiUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		F053F02583896A7B0E7DF4B2 /* libPods-GoT_wikiUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoT_wikiUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FD4F74F3420DB071EED6D39F /* Pods-GoT_wikiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoT_wikiUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoT_wikiUITests/Pods-GoT_wikiUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		69C0027C0483D08C4302C56D /* Pods-GoT_wikiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoT_wikiTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoT_wikiTests/Pods-GoT_wikiTests.release.xcconfig"; sourceTree = "<group>"; };
+		AA007105AA3A7F7C4C6B9E12 /* Pods-GoT_wikiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoT_wikiUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoT_wikiUITests/Pods-GoT_wikiUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B9AE0A9F2C6FBC98450915D9 /* Pods-GoT_wikiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoT_wikiTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoT_wikiTests/Pods-GoT_wikiTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BC18A323775848EE7CDB0E27 /* libPods-GoT_wiki.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoT_wiki.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5A6ED8FC0FB1FB084375F32 /* Pods-GoT_wiki.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoT_wiki.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoT_wiki/Pods-GoT_wiki.debug.xcconfig"; sourceTree = "<group>"; };
+		DA152BF6461F41079F4AAE0F /* Pods-GoT_wiki.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoT_wiki.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoT_wiki/Pods-GoT_wiki.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D74FAD24C9B5F97C904EA35D /* libPods-GoT_wiki.a in Frameworks */,
+				278BCE64E3B76EADE6B92BDE /* libPods-GoT_wiki.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,8 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B963EBAE50E47767FD2B4D2 /* libPods-GoT_wikiTests.a in Frameworks */,
-				DE6FBB0AEF1161BEF39CE31A /* libPods-GoT_wiki-GoT_wikiTests.a in Frameworks */,
+				9E39F2C1EA36D4217722CE96 /* libPods-GoT_wikiTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,22 +93,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E779471E69A42BB57DF900B0 /* libPods-GoT_wikiUITests.a in Frameworks */,
-				46B5EAFC7001F0E0751A2485 /* libPods-GoT_wiki-GoT_wikiUITests.a in Frameworks */,
+				14194AD027E81D11CDEB9347 /* libPods-GoT_wikiUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5ECDD1F60B9D0BE826B11D68 /* Frameworks */ = {
+		0FFBBEC58A74FFF030F23D0B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2F423F887D0AD595A882A27D /* libPods-GoT_wiki.a */,
-				21325498AEFD103A0FE6F667 /* libPods-GoT_wikiTests.a */,
-				F053F02583896A7B0E7DF4B2 /* libPods-GoT_wikiUITests.a */,
-				A21AB846EFA7EB2577889FAF /* libPods-GoT_wiki-GoT_wikiTests.a */,
-				AB695ED6991CC8A26D8F58D6 /* libPods-GoT_wiki-GoT_wikiUITests.a */,
+				BC18A323775848EE7CDB0E27 /* libPods-GoT_wiki.a */,
+				16D2191F8AB7E40CA57DCDD5 /* libPods-GoT_wikiTests.a */,
+				1021345B340D23775CD90B3F /* libPods-GoT_wikiUITests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -128,20 +116,12 @@
 				671DCBEC1D986AFC00457F95 /* GoT_wiki */,
 				671DCC091D986AFC00457F95 /* GoT_wikiTests */,
 				671DCC141D986AFC00457F95 /* GoT_wikiUITests */,
-				671DCBEB1D986AFC00457F95 /* Products */,
-				DFC068C805B6082A0AF11F26 /* Pods */,
-				5ECDD1F60B9D0BE826B11D68 /* Frameworks */,
+				875556FC26EC94958E95E691 /* Pods */,
+				0FFBBEC58A74FFF030F23D0B /* Frameworks */,
+				677205AC1D9DE2950049D598 /* GoT_wiki.app */,
+				677205AD1D9DE2950049D598 /* GoT_wikiTests.xctest */,
+				677205AE1D9DE2950049D598 /* GoT_wikiUITests.xctest */,
 			);
-			sourceTree = "<group>";
-		};
-		671DCBEB1D986AFC00457F95 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				671DCBEA1D986AFC00457F95 /* GoT_wiki.app */,
-				671DCC061D986AFC00457F95 /* GoT_wikiTests.xctest */,
-				671DCC111D986AFC00457F95 /* GoT_wikiUITests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		671DCBEC1D986AFC00457F95 /* GoT_wiki */ = {
@@ -231,19 +211,15 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
-		DFC068C805B6082A0AF11F26 /* Pods */ = {
+		875556FC26EC94958E95E691 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				57BA47AA12FA918DBB746387 /* Pods-GoT_wiki.debug.xcconfig */,
-				7FE02E53BAD82E13CCA44F57 /* Pods-GoT_wiki.release.xcconfig */,
-				B88AD4BB4A910460DECAE843 /* Pods-GoT_wikiTests.debug.xcconfig */,
-				1E95D675DDDB7811AACE96FB /* Pods-GoT_wikiTests.release.xcconfig */,
-				FD4F74F3420DB071EED6D39F /* Pods-GoT_wikiUITests.debug.xcconfig */,
-				69DF9FF8F0CAABD7A620529B /* Pods-GoT_wikiUITests.release.xcconfig */,
-				0D3FF4F87F345229AE7A3654 /* Pods-GoT_wiki-GoT_wikiTests.debug.xcconfig */,
-				BB27B4801407BA258E313B27 /* Pods-GoT_wiki-GoT_wikiTests.release.xcconfig */,
-				BDEB242B65F9DF9F6E115B75 /* Pods-GoT_wiki-GoT_wikiUITests.debug.xcconfig */,
-				82D63FE0E538623FAC77AA2B /* Pods-GoT_wiki-GoT_wikiUITests.release.xcconfig */,
+				D5A6ED8FC0FB1FB084375F32 /* Pods-GoT_wiki.debug.xcconfig */,
+				DA152BF6461F41079F4AAE0F /* Pods-GoT_wiki.release.xcconfig */,
+				B9AE0A9F2C6FBC98450915D9 /* Pods-GoT_wikiTests.debug.xcconfig */,
+				69C0027C0483D08C4302C56D /* Pods-GoT_wikiTests.release.xcconfig */,
+				AA007105AA3A7F7C4C6B9E12 /* Pods-GoT_wikiUITests.debug.xcconfig */,
+				45E5196A8711B444D7D8CF6A /* Pods-GoT_wikiUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -257,8 +233,8 @@
 			buildPhases = (
 				8ABB34CA0EB191C5089E0F2C /* [CP] Check Pods Manifest.lock */,
 				671DCBE61D986AFC00457F95 /* Sources */,
-				671DCBE71D986AFC00457F95 /* Frameworks */,
 				671DCBE81D986AFC00457F95 /* Resources */,
+				671DCBE71D986AFC00457F95 /* Frameworks */,
 				1D6427D2A5ADB91713E6876E /* [CP] Embed Pods Frameworks */,
 				EBBD48A960369E9DCDE43653 /* [CP] Copy Pods Resources */,
 			);
@@ -268,7 +244,7 @@
 			);
 			name = GoT_wiki;
 			productName = GoT_wiki;
-			productReference = 671DCBEA1D986AFC00457F95 /* GoT_wiki.app */;
+			productReference = 677205AC1D9DE2950049D598 /* GoT_wiki.app */;
 			productType = "com.apple.product-type.application";
 		};
 		671DCC051D986AFC00457F95 /* GoT_wikiTests */ = {
@@ -289,7 +265,7 @@
 			);
 			name = GoT_wikiTests;
 			productName = GoT_wikiTests;
-			productReference = 671DCC061D986AFC00457F95 /* GoT_wikiTests.xctest */;
+			productReference = 677205AD1D9DE2950049D598 /* GoT_wikiTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		671DCC101D986AFC00457F95 /* GoT_wikiUITests */ = {
@@ -309,7 +285,7 @@
 			);
 			name = GoT_wikiUITests;
 			productName = GoT_wikiUITests;
-			productReference = 671DCC111D986AFC00457F95 /* GoT_wikiUITests.xctest */;
+			productReference = 677205AE1D9DE2950049D598 /* GoT_wikiUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -343,7 +319,7 @@
 				Base,
 			);
 			mainGroup = 671DCBE11D986AFC00457F95;
-			productRefGroup = 671DCBEB1D986AFC00457F95 /* Products */;
+			productRefGroup = 671DCBE11D986AFC00457F95;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -453,7 +429,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoT_wiki-GoT_wikiTests/Pods-GoT_wiki-GoT_wikiTests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoT_wikiTests/Pods-GoT_wikiTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A99FB9713EF10FC4788FCE07 /* [CP] Embed Pods Frameworks */ = {
@@ -468,7 +444,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoT_wiki-GoT_wikiTests/Pods-GoT_wiki-GoT_wikiTests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoT_wikiTests/Pods-GoT_wikiTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BE96CA1B0813ECA9C76913DC /* [CP] Copy Pods Resources */ = {
@@ -483,7 +459,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoT_wiki-GoT_wikiUITests/Pods-GoT_wiki-GoT_wikiUITests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoT_wikiUITests/Pods-GoT_wikiUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EBBD48A960369E9DCDE43653 /* [CP] Copy Pods Resources */ = {
@@ -635,13 +611,17 @@
 		};
 		671DCC1B1D986AFC00457F95 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 57BA47AA12FA918DBB746387 /* Pods-GoT_wiki.debug.xcconfig */;
+			baseConfigurationReference = D5A6ED8FC0FB1FB084375F32 /* Pods-GoT_wiki.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				INFOPLIST_FILE = GoT_wiki/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.b0dz1o.GoT-wiki";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -649,13 +629,17 @@
 		};
 		671DCC1C1D986AFC00457F95 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7FE02E53BAD82E13CCA44F57 /* Pods-GoT_wiki.release.xcconfig */;
+			baseConfigurationReference = DA152BF6461F41079F4AAE0F /* Pods-GoT_wiki.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				INFOPLIST_FILE = GoT_wiki/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.b0dz1o.GoT-wiki";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -663,7 +647,7 @@
 		};
 		671DCC1E1D986AFC00457F95 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0D3FF4F87F345229AE7A3654 /* Pods-GoT_wiki-GoT_wikiTests.debug.xcconfig */;
+			baseConfigurationReference = B9AE0A9F2C6FBC98450915D9 /* Pods-GoT_wikiTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = GoT_wikiTests/Info.plist;
@@ -676,7 +660,7 @@
 		};
 		671DCC1F1D986AFC00457F95 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BB27B4801407BA258E313B27 /* Pods-GoT_wiki-GoT_wikiTests.release.xcconfig */;
+			baseConfigurationReference = 69C0027C0483D08C4302C56D /* Pods-GoT_wikiTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = GoT_wikiTests/Info.plist;
@@ -689,7 +673,7 @@
 		};
 		671DCC211D986AFC00457F95 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BDEB242B65F9DF9F6E115B75 /* Pods-GoT_wiki-GoT_wikiUITests.debug.xcconfig */;
+			baseConfigurationReference = AA007105AA3A7F7C4C6B9E12 /* Pods-GoT_wikiUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = GoT_wikiUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -701,7 +685,7 @@
 		};
 		671DCC221D986AFC00457F95 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 82D63FE0E538623FAC77AA2B /* Pods-GoT_wiki-GoT_wikiUITests.release.xcconfig */;
+			baseConfigurationReference = 45E5196A8711B444D7D8CF6A /* Pods-GoT_wikiUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = GoT_wikiUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

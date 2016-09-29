@@ -1,16 +1,18 @@
 language: objective-c
 osx_image: xcode7.3
 xcode_workspace: GoT_wiki.xcworkspace
-xcode_scheme: GoT_wiki
+xcode_scheme: travisUnit
 xcode_sdk: iphonesimulator9.3
 branches:
   only:
     - master
     - develop
     - /^release\/[\w\.]+$/
-script:
-  - bash runAllTests.sh
+install:
+  - gem install activesupport -v 4.2.6
+  - gem install cocoapods -v 1.0.1
+  - pod install
+script: bash allScripts.sh
 after_success:
   - bash <(curl -s https://codecov.io/bash)
-cache:
-  - cocoapods
+# cache: cocoapods

@@ -5,11 +5,15 @@ target 'GoT_wiki' do
   pod 'JSONModel', '~> 1.5.1'
 
   target 'GoT_wikiTests' do
-    pod 'Realm/Headers', :podspec => 'podspecs/Realm.podspec'
+    inherit! :search_paths
+    pod 'Realm/Headers', :podspec => 'podspecs/Realm.podspec' 
+    pod 'JSONModel', '~> 1.5.1'
   end
 
   target 'GoT_wikiUITests' do
-    pod 'Realm/Headers', :podspec => 'podspecs/Realm.podspec'
+    inherit! :search_paths
+    pod 'Realm', :podspec => 'podspecs/Realm.podspec' 
+    pod 'JSONModel', '~> 1.5.1'
   end
 
 end
