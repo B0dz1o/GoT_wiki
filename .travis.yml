@@ -8,10 +8,8 @@ branches:
     - master
     - develop
     - /^release\/[\w\.]+$/
-install: true
 script:
-  - bash runUITest.sh
-  - xctool
+  - bash runAllTests.sh
 after_success:
   - bash <(curl -s https://codecov.io/bash)
 cache:

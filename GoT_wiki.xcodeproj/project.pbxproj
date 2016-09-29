@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2B963EBAE50E47767FD2B4D2 /* libPods-GoT_wikiTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 21325498AEFD103A0FE6F667 /* libPods-GoT_wikiTests.a */; };
+		46B5EAFC7001F0E0751A2485 /* libPods-GoT_wiki-GoT_wikiUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB695ED6991CC8A26D8F58D6 /* libPods-GoT_wiki-GoT_wikiUITests.a */; };
 		671DCBEF1D986AFC00457F95 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 671DCBEE1D986AFC00457F95 /* main.m */; };
 		671DCBF21D986AFC00457F95 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 671DCBF11D986AFC00457F95 /* AppDelegate.m */; };
 		671DCBFD1D986AFC00457F95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 671DCBFC1D986AFC00457F95 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 		67D3C02D1D9AFF5C00CD5554 /* RequestFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D3C02C1D9AFF5C00CD5554 /* RequestFactory.m */; };
 		67D3C0311D9B03F800CD5554 /* CharacterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D3C0301D9B03F800CD5554 /* CharacterModel.m */; };
 		D74FAD24C9B5F97C904EA35D /* libPods-GoT_wiki.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F423F887D0AD595A882A27D /* libPods-GoT_wiki.a */; };
+		DE6FBB0AEF1161BEF39CE31A /* libPods-GoT_wiki-GoT_wikiTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A21AB846EFA7EB2577889FAF /* libPods-GoT_wiki-GoT_wikiTests.a */; };
 		E779471E69A42BB57DF900B0 /* libPods-GoT_wikiUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F053F02583896A7B0E7DF4B2 /* libPods-GoT_wikiUITests.a */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D3FF4F87F345229AE7A3654 /* Pods-GoT_wiki-GoT_wikiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoT_wiki-GoT_wikiTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoT_wiki-GoT_wikiTests/Pods-GoT_wiki-GoT_wikiTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1E95D675DDDB7811AACE96FB /* Pods-GoT_wikiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoT_wikiTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoT_wikiTests/Pods-GoT_wikiTests.release.xcconfig"; sourceTree = "<group>"; };
 		21325498AEFD103A0FE6F667 /* libPods-GoT_wikiTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoT_wikiTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F423F887D0AD595A882A27D /* libPods-GoT_wiki.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoT_wiki.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,7 +70,12 @@
 		67D3C0301D9B03F800CD5554 /* CharacterModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CharacterModel.m; path = Sources/Models/CharacterModel.m; sourceTree = "<group>"; };
 		69DF9FF8F0CAABD7A620529B /* Pods-GoT_wikiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoT_wikiUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoT_wikiUITests/Pods-GoT_wikiUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7FE02E53BAD82E13CCA44F57 /* Pods-GoT_wiki.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoT_wiki.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoT_wiki/Pods-GoT_wiki.release.xcconfig"; sourceTree = "<group>"; };
+		82D63FE0E538623FAC77AA2B /* Pods-GoT_wiki-GoT_wikiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoT_wiki-GoT_wikiUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoT_wiki-GoT_wikiUITests/Pods-GoT_wiki-GoT_wikiUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A21AB846EFA7EB2577889FAF /* libPods-GoT_wiki-GoT_wikiTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoT_wiki-GoT_wikiTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB695ED6991CC8A26D8F58D6 /* libPods-GoT_wiki-GoT_wikiUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoT_wiki-GoT_wikiUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B88AD4BB4A910460DECAE843 /* Pods-GoT_wikiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoT_wikiTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoT_wikiTests/Pods-GoT_wikiTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BB27B4801407BA258E313B27 /* Pods-GoT_wiki-GoT_wikiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoT_wiki-GoT_wikiTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoT_wiki-GoT_wikiTests/Pods-GoT_wiki-GoT_wikiTests.release.xcconfig"; sourceTree = "<group>"; };
+		BDEB242B65F9DF9F6E115B75 /* Pods-GoT_wiki-GoT_wikiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoT_wiki-GoT_wikiUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoT_wiki-GoT_wikiUITests/Pods-GoT_wiki-GoT_wikiUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F053F02583896A7B0E7DF4B2 /* libPods-GoT_wikiUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoT_wikiUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD4F74F3420DB071EED6D39F /* Pods-GoT_wikiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoT_wikiUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoT_wikiUITests/Pods-GoT_wikiUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,6 +94,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B963EBAE50E47767FD2B4D2 /* libPods-GoT_wikiTests.a in Frameworks */,
+				DE6FBB0AEF1161BEF39CE31A /* libPods-GoT_wiki-GoT_wikiTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +103,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E779471E69A42BB57DF900B0 /* libPods-GoT_wikiUITests.a in Frameworks */,
+				46B5EAFC7001F0E0751A2485 /* libPods-GoT_wiki-GoT_wikiUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +116,8 @@
 				2F423F887D0AD595A882A27D /* libPods-GoT_wiki.a */,
 				21325498AEFD103A0FE6F667 /* libPods-GoT_wikiTests.a */,
 				F053F02583896A7B0E7DF4B2 /* libPods-GoT_wikiUITests.a */,
+				A21AB846EFA7EB2577889FAF /* libPods-GoT_wiki-GoT_wikiTests.a */,
+				AB695ED6991CC8A26D8F58D6 /* libPods-GoT_wiki-GoT_wikiUITests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -228,6 +240,10 @@
 				1E95D675DDDB7811AACE96FB /* Pods-GoT_wikiTests.release.xcconfig */,
 				FD4F74F3420DB071EED6D39F /* Pods-GoT_wikiUITests.debug.xcconfig */,
 				69DF9FF8F0CAABD7A620529B /* Pods-GoT_wikiUITests.release.xcconfig */,
+				0D3FF4F87F345229AE7A3654 /* Pods-GoT_wiki-GoT_wikiTests.debug.xcconfig */,
+				BB27B4801407BA258E313B27 /* Pods-GoT_wiki-GoT_wikiTests.release.xcconfig */,
+				BDEB242B65F9DF9F6E115B75 /* Pods-GoT_wiki-GoT_wikiUITests.debug.xcconfig */,
+				82D63FE0E538623FAC77AA2B /* Pods-GoT_wiki-GoT_wikiUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -437,7 +453,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoT_wikiTests/Pods-GoT_wikiTests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoT_wiki-GoT_wikiTests/Pods-GoT_wiki-GoT_wikiTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A99FB9713EF10FC4788FCE07 /* [CP] Embed Pods Frameworks */ = {
@@ -452,7 +468,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoT_wikiTests/Pods-GoT_wikiTests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoT_wiki-GoT_wikiTests/Pods-GoT_wiki-GoT_wikiTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BE96CA1B0813ECA9C76913DC /* [CP] Copy Pods Resources */ = {
@@ -467,7 +483,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoT_wikiUITests/Pods-GoT_wikiUITests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoT_wiki-GoT_wikiUITests/Pods-GoT_wiki-GoT_wikiUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EBBD48A960369E9DCDE43653 /* [CP] Copy Pods Resources */ = {
@@ -647,7 +663,7 @@
 		};
 		671DCC1E1D986AFC00457F95 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B88AD4BB4A910460DECAE843 /* Pods-GoT_wikiTests.debug.xcconfig */;
+			baseConfigurationReference = 0D3FF4F87F345229AE7A3654 /* Pods-GoT_wiki-GoT_wikiTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = GoT_wikiTests/Info.plist;
@@ -660,7 +676,7 @@
 		};
 		671DCC1F1D986AFC00457F95 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1E95D675DDDB7811AACE96FB /* Pods-GoT_wikiTests.release.xcconfig */;
+			baseConfigurationReference = BB27B4801407BA258E313B27 /* Pods-GoT_wiki-GoT_wikiTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = GoT_wikiTests/Info.plist;
@@ -673,7 +689,7 @@
 		};
 		671DCC211D986AFC00457F95 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FD4F74F3420DB071EED6D39F /* Pods-GoT_wikiUITests.debug.xcconfig */;
+			baseConfigurationReference = BDEB242B65F9DF9F6E115B75 /* Pods-GoT_wiki-GoT_wikiUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = GoT_wikiUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -685,7 +701,7 @@
 		};
 		671DCC221D986AFC00457F95 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 69DF9FF8F0CAABD7A620529B /* Pods-GoT_wikiUITests.release.xcconfig */;
+			baseConfigurationReference = 82D63FE0E538623FAC77AA2B /* Pods-GoT_wiki-GoT_wikiUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = GoT_wikiUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
