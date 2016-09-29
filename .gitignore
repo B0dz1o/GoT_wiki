@@ -25,7 +25,8 @@ xcuserdata/
 *.dSYM
 
 # CocoaPods
-Pods/
+# for waaay easier Travis usage
+#Pods/
 
 # fastlane
 
