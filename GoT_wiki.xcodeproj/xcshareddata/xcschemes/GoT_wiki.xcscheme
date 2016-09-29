@@ -20,20 +20,6 @@
                ReferencedContainer = "container:GoT_wiki.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "NO"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "671DCC051D986AFC00457F95"
-               BuildableName = "GoT_wikiTests.xctest"
-               BlueprintName = "GoT_wikiTests"
-               ReferencedContainer = "container:GoT_wiki.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -43,16 +29,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       codeCoverageEnabled = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "671DCC101D986AFC00457F95"
-               BuildableName = "GoT_wikiUITests.xctest"
-               BlueprintName = "GoT_wikiUITests"
-               ReferencedContainer = "container:GoT_wiki.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
          <TestableReference
             skipped = "NO">
             <BuildableReference
