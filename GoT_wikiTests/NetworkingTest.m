@@ -38,7 +38,7 @@
 }
 
 - (void)testFactoryCreation {
-    XCTAssertNil([factory runTask:nil withHandler:nil]);
+    XCTAssertNil([factory runTask:0 withHandler:nil]);
     XCTAssertNoThrow([factory runTask:CHARACTER_LIST withHandler:nil]);
     XCTAssertNotNil([factory runTask:CHARACTER_LIST withHandler:nil]);
     XCTAssertNoThrow([factory runTask:CHARACTER_LIST withHandler:

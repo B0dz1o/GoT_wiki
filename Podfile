@@ -1,6 +1,9 @@
 platform :ios, '8.0'
+use_frameworks!
+workspace 'GoT_wiki'
 
 target 'GoT_wiki' do
+
   pod 'Realm', :podspec => 'podspecs/Realm.podspec' 
   pod 'JSONModel', '~> 1.5.1'
 

@@ -29,14 +29,7 @@ function travis_nanoseconds() {
 }
 
 
-# Unit testing
-travis_time_start
-bash scripts/xct.sh
-travis_time_finish
-if [ $? -ne 0 ];
-then
-        exit 1
-fi
+set -o pipefail &&
 
 #UI tests for iPhone 4S
 echo ''
