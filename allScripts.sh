@@ -33,7 +33,7 @@ function travis_nanoseconds() {
 travis_time_start
 bash scripts/xct.sh
 travis_time_finish
-if [ $? -ne 0];
+if [ $? -ne 0 ];
 then
         exit 1
 fi
