@@ -13,8 +13,13 @@
 @synthesize baseURL, path, paramsString, requestHandler;
 
 -(NSURLSessionDataTask *)buildTask {
-    NSURL * taskURL = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@%@",
-                                            [self baseURL], [self path], [self paramsString]]];
+    NSString * absUrl = [NSString stringWithFormat:@"%@%@%@",
+                         [self baseURL], [self path], [self paramsString]];
+    return [self buildTaskWithURL:absUrl];
+}
+
+- (NSURLSessionDataTask *)buildTaskWithURL:(NSString *)absUrl {
+    NSURL * taskURL = [NSURL URLWithString:absUrl];
     [self requestHandler];
     NSURLSession * session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
     NSURLSessionDataTask * task = [session dataTaskWithURL:taskURL completionHandler: [self requestHandler]];
@@ -46,6 +51,11 @@
 
 - (HTTPBuilder *)usePath: (NSString *) argPath {
     [self setPath:argPath];
+    return self;
+}
+
+- (HTTPBuilder *)useRequestHandler:(void (^)(NSData *, NSURLResponse *, NSError *))handler {
+    [self setRequestHandler:handler];
     return self;
 }
 

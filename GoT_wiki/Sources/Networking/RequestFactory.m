@@ -12,6 +12,13 @@
 
 @synthesize builder;
 
+- (instancetype) init {
+    if (self = [super init]){
+        [self setBuilder:[[HTTPBuilder alloc] init]];
+    }
+    return self;
+}
+
 + (instancetype)sharedObject {
     static RequestFactory * factory;
     static dispatch_once_t token;
@@ -25,13 +32,14 @@
 
 - (NSURLSessionDataTask *)runTask:(RequestTypes)type withHandler:(void (^)(NSData *, NSURLResponse *, NSError *))handler {
     NSURLSessionDataTask* task;
-    builder = [[HTTPBuilder alloc] init];
+    [builder useDefaultBaseURL];
     switch(type) {
         case CHARACTER_LIST:
-            [[[builder useDefaultBaseURL] usePath:@"Articles/Top"]
+            [[[builder usePath:@"Articles/Top"]
              useParameters: @{@"expand":@1,
                               @"category":@"Characters",
-                              @"limit":@75}];
+                              @"limit":@75}]
+             useRequestHandler:handler];
             task = [builder buildTask];
             break;
         default:
@@ -39,6 +47,10 @@
             break;
     }
     return task;
+}
+
+- (NSURLSessionDataTask *)runAbsoluteUrl:(NSString *)absUrl withHandler:(void (^)(NSData *, NSURLResponse *, NSError *))handler {
+    return [[builder useRequestHandler:handler] buildTaskWithURL:absUrl];
 }
 
 @end
