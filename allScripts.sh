@@ -39,6 +39,7 @@ then
 fi
 
 #UI tests for iPhone 4S
+echo ''
 travis_time_start
 echo ''
 bash scripts/ip4s.sh
@@ -50,6 +51,7 @@ then
 fi
 
 #UI tests for iPhone 5S
+echo ''
 travis_time_start
 echo ''
 bash scripts/ip5s.sh

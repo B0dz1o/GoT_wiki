@@ -27,7 +27,7 @@
 
 
 
-- (void)testExample {
+- (void)testTableView {
     XCUIElement *emptyListTable = [[XCUIApplication alloc] init].tables[@"Empty list"];
     [emptyListTable tap];
     [emptyListTable doubleTap];
