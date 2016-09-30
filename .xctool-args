@@ -1,6 +1,6 @@
 [
 	"-workspace", "GoT_wiki.xcworkspace",
-	"-scheme", "GoT_wiki",
+	"-scheme", "travisUnit",
 	"-sdk","iphonesimulator9.3",
 	"-destination", "platform=iOS Simulator,name=iPhone 5s,OS=9.3",
 	"test", "-parallelize"
