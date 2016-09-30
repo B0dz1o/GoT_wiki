@@ -10,7 +10,7 @@ if [ $CODE -ne 0 ];
 then
 	CODE=1
 fi
-echo 'travis_fold:start:iPhone5s'
+echo 'travis_fold:end:iPhone5s'
 exit $CODE
 
 

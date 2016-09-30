@@ -40,7 +40,9 @@ fi
 
 #UI tests for iPhone 4S
 travis_time_start
+echo ''
 bash scripts/ip4s.sh
+echo ''
 travis_time_finish
 if [ $? -ne 0 ];
 then
@@ -49,7 +51,9 @@ fi
 
 #UI tests for iPhone 5S
 travis_time_start
+echo ''
 bash scripts/ip5s.sh
+echo ''
 travis_time_finish
 if [ $? -ne 0 ];
 then
