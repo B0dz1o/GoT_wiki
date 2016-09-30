@@ -38,7 +38,7 @@
 }
 
 - (void)testFactoryCreation {
-    XCTAssertNil([factory runTask:nil withHandler:nil]);
+    XCTAssertNil([factory runTask:0 withHandler:nil]);
     XCTAssertNoThrow([factory runTask:CHARACTER_LIST withHandler:nil]);
     XCTAssertNotNil([factory runTask:CHARACTER_LIST withHandler:nil]);
     XCTAssertNoThrow([factory runTask:CHARACTER_LIST withHandler:
@@ -65,9 +65,24 @@
                       @"limit":@75}];
     NSString * addr = [[[[[self builder] buildTask] currentRequest] URL] absoluteString];
     BOOL bit32 = [addr isEqualToString:@"http://gameofthrones.wikia.com/api/v1/Articles/Top?expand=1&category=Characters&limit=75"];
- 
     BOOL bit64 = [addr isEqualToString:@"http://gameofthrones.wikia.com/api/v1/Articles/Top?category=Characters&limit=75&expand=1"];
     XCTAssertTrue(bit32 || bit64);
+    addr = [[[[[[self builder] useParameters:@{@"limit":@75}] buildTask] currentRequest] URL] absoluteString];
+    XCTAssertTrue([addr isEqualToString:@"http://gameofthrones.wikia.com/api/v1/Articles/Top?limit=75"]);
+    addr = [[[[[self builder] buildTaskWithURL:addr] currentRequest] URL] absoluteString];
+    XCTAssertTrue([addr isEqualToString:@"http://gameofthrones.wikia.com/api/v1/Articles/Top?limit=75"]);
+}
+
+- (void) testFactoryRequestCreation {
+    NSURLSessionDataTask * task = [factory runTask:CHARACTER_LIST withHandler:nil];
+    NSString * addr = [[[task currentRequest] URL] absoluteString];
+    BOOL bit32 = [addr isEqualToString:@"http://gameofthrones.wikia.com/api/v1/Articles/Top?expand=1&category=Characters&limit=75"];
+    BOOL bit64 = [addr isEqualToString:@"http://gameofthrones.wikia.com/api/v1/Articles/Top?category=Characters&limit=75&expand=1"];
+    XCTAssertTrue(bit32 || bit64);
+    
+    NSString * jonSnowURL = @"http://vignette3.wikia.nocookie.net/gameofthrones/images/4/49/Battle_of_the_Bastards_08.jpg/revision/latest/window-crop/width/200/x-offset/0/y-offset/0/window-width/2700/window-height/2700?cb=20160615184845";
+    task = [factory runAbsoluteUrl:jonSnowURL withHandler:nil];
+    XCTAssertTrue([[[[task currentRequest] URL] absoluteString] isEqualToString:jonSnowURL]);
 }
 
 - (void)testBuilderPerformance {

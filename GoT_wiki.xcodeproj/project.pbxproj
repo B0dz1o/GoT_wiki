@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		14194AD027E81D11CDEB9347 /* libPods-GoT_wikiUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1021345B340D23775CD90B3F /* libPods-GoT_wikiUITests.a */; };
-		278BCE64E3B76EADE6B92BDE /* libPods-GoT_wiki.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC18A323775848EE7CDB0E27 /* libPods-GoT_wiki.a */; };
+		378800537F5A71A205F23EE9 /* Pods_GoT_wiki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99F02A18A985EBAF6C22078E /* Pods_GoT_wiki.framework */; };
 		671DCBEF1D986AFC00457F95 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 671DCBEE1D986AFC00457F95 /* main.m */; };
 		671DCBF21D986AFC00457F95 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 671DCBF11D986AFC00457F95 /* AppDelegate.m */; };
 		671DCBFD1D986AFC00457F95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 671DCBFC1D986AFC00457F95 /* Assets.xcassets */; };
@@ -19,7 +18,8 @@
 		67D3C0261D9AEA2700CD5554 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67D3C0241D9AEA2700CD5554 /* HomeViewController.xib */; };
 		67D3C02D1D9AFF5C00CD5554 /* RequestFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D3C02C1D9AFF5C00CD5554 /* RequestFactory.m */; };
 		67D3C0311D9B03F800CD5554 /* CharacterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D3C0301D9B03F800CD5554 /* CharacterModel.m */; };
-		9E39F2C1EA36D4217722CE96 /* libPods-GoT_wikiTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 16D2191F8AB7E40CA57DCDD5 /* libPods-GoT_wikiTests.a */; };
+		6F99786599A90A325B3E0D46 /* Pods_GoT_wikiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E054B522A555837E5797DA0 /* Pods_GoT_wikiTests.framework */; };
+		EC075641F3584DDD8C75B59F /* Pods_GoT_wikiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E00CBEA3B7433ADF0FDAA7 /* Pods_GoT_wikiUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,9 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1021345B340D23775CD90B3F /* libPods-GoT_wikiUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoT_wikiUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		16D2191F8AB7E40CA57DCDD5 /* libPods-GoT_wikiTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoT_wikiTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		45E5196A8711B444D7D8CF6A /* Pods-GoT_wikiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoT_wikiUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoT_wikiUITests/Pods-GoT_wikiUITests.release.xcconfig"; sourceTree = "<group>"; };
+		60E00CBEA3B7433ADF0FDAA7 /* Pods_GoT_wikiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoT_wikiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		671DCBEE1D986AFC00457F95 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		671DCBF01D986AFC00457F95 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		671DCBF11D986AFC00457F95 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -65,9 +64,10 @@
 		67D3C02F1D9B03F800CD5554 /* CharacterModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CharacterModel.h; path = Sources/Models/CharacterModel.h; sourceTree = "<group>"; };
 		67D3C0301D9B03F800CD5554 /* CharacterModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CharacterModel.m; path = Sources/Models/CharacterModel.m; sourceTree = "<group>"; };
 		69C0027C0483D08C4302C56D /* Pods-GoT_wikiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoT_wikiTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoT_wikiTests/Pods-GoT_wikiTests.release.xcconfig"; sourceTree = "<group>"; };
+		99F02A18A985EBAF6C22078E /* Pods_GoT_wiki.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoT_wiki.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E054B522A555837E5797DA0 /* Pods_GoT_wikiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoT_wikiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA007105AA3A7F7C4C6B9E12 /* Pods-GoT_wikiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoT_wikiUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoT_wikiUITests/Pods-GoT_wikiUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B9AE0A9F2C6FBC98450915D9 /* Pods-GoT_wikiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoT_wikiTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoT_wikiTests/Pods-GoT_wikiTests.debug.xcconfig"; sourceTree = "<group>"; };
-		BC18A323775848EE7CDB0E27 /* libPods-GoT_wiki.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoT_wiki.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5A6ED8FC0FB1FB084375F32 /* Pods-GoT_wiki.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoT_wiki.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoT_wiki/Pods-GoT_wiki.debug.xcconfig"; sourceTree = "<group>"; };
 		DA152BF6461F41079F4AAE0F /* Pods-GoT_wiki.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoT_wiki.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoT_wiki/Pods-GoT_wiki.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,7 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				278BCE64E3B76EADE6B92BDE /* libPods-GoT_wiki.a in Frameworks */,
+				378800537F5A71A205F23EE9 /* Pods_GoT_wiki.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,7 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E39F2C1EA36D4217722CE96 /* libPods-GoT_wikiTests.a in Frameworks */,
+				6F99786599A90A325B3E0D46 /* Pods_GoT_wikiTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,7 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14194AD027E81D11CDEB9347 /* libPods-GoT_wikiUITests.a in Frameworks */,
+				EC075641F3584DDD8C75B59F /* Pods_GoT_wikiUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,9 +103,9 @@
 		0FFBBEC58A74FFF030F23D0B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BC18A323775848EE7CDB0E27 /* libPods-GoT_wiki.a */,
-				16D2191F8AB7E40CA57DCDD5 /* libPods-GoT_wikiTests.a */,
-				1021345B340D23775CD90B3F /* libPods-GoT_wikiUITests.a */,
+				99F02A18A985EBAF6C22078E /* Pods_GoT_wiki.framework */,
+				9E054B522A555837E5797DA0 /* Pods_GoT_wikiTests.framework */,
+				60E00CBEA3B7433ADF0FDAA7 /* Pods_GoT_wikiUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -618,10 +618,7 @@
 				INFOPLIST_FILE = GoT_wiki/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.b0dz1o.GoT-wiki";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -636,10 +633,7 @@
 				INFOPLIST_FILE = GoT_wiki/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.b0dz1o.GoT-wiki";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

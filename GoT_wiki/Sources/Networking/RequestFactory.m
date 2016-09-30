@@ -32,9 +32,10 @@
 
 - (NSURLSessionDataTask *)runTask:(RequestTypes)type withHandler:(void (^)(NSData *, NSURLResponse *, NSError *))handler {
     NSURLSessionDataTask* task;
+    [builder useDefaultBaseURL];
     switch(type) {
         case CHARACTER_LIST:
-            [[[[builder useDefaultBaseURL] usePath:@"Articles/Top"]
+            [[[builder usePath:@"Articles/Top"]
              useParameters: @{@"expand":@1,
                               @"category":@"Characters",
                               @"limit":@75}]
