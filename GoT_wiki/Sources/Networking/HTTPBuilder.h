@@ -25,6 +25,10 @@
  @returns Data task to be called
  */
 -(NSURLSessionDataTask *) buildTask;
+/** Method creating data task based on builder configuration
+ @returns Data task to be called
+ */
+-(NSURLSessionDataTask *) buildTaskWithURL: (NSString *) absUrl;
 /** Set default Game of Thrones wiki API URL
  @returns The builder itself for future use
  */
@@ -39,5 +43,10 @@
  @returns The builder itself for future use
  */
 -(HTTPBuilder *) usePath: (NSString *) path;
+/** Part of building process, handler setter
+ @param handler Block to make use of server reponse data or error
+ @returns The builder itself for future use
+ */
+-(HTTPBuilder *) useRequestHandler: (void (^)(NSData *, NSURLResponse *, NSError *)) handler;
 
 @end

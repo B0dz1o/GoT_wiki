@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "HTTPBuilder.h"
 
+///Factory pattern creating http requests
 @interface RequestFactory : NSObject
 
 /**GoT wiki request types. 
@@ -32,5 +33,12 @@ typedef enum {
  */
 -(NSURLSessionDataTask *) runTask: (RequestTypes) type
                          withHandler:(void (^)(NSData*, NSURLResponse*, NSError*)) handler;
+/**Abstract layer around server communication access
+ @param absUrl String URL to get data from.
+ @param handler Block to make use of server reponse data or error
+ @returns Data task object to be called
+ */
+-(NSURLSessionDataTask *) runAbsoluteUrl: (NSString *) absUrl
+                      withHandler:(void (^)(NSData*, NSURLResponse*, NSError*)) handler;
 
 @end
