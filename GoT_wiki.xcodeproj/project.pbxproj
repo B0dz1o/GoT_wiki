@@ -13,6 +13,8 @@
 		671DCC0B1D986AFC00457F95 /* NetworkingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 671DCC0A1D986AFC00457F95 /* NetworkingTest.m */; };
 		676730F41D9BFF37003E1F81 /* HTTPBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 676730F31D9BFF37003E1F81 /* HTTPBuilder.m */; };
 		67A725C31D9ED86F008D525E /* HomeViewTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A725C21D9ED86F008D525E /* HomeViewTest.m */; };
+		67A725C71D9EDF39008D525E /* HomeViewControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A725C61D9EDF39008D525E /* HomeViewControllerDelegate.m */; };
+		67A725CA1D9EE69F008D525E /* HomeViewControllerDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A725C91D9EE69F008D525E /* HomeViewControllerDataSource.m */; };
 		67D3C0251D9AEA2700CD5554 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D3C0231D9AEA2700CD5554 /* HomeViewController.m */; };
 		67D3C0261D9AEA2700CD5554 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67D3C0241D9AEA2700CD5554 /* HomeViewController.xib */; };
 		67D3C02D1D9AFF5C00CD5554 /* RequestFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D3C02C1D9AFF5C00CD5554 /* RequestFactory.m */; };
@@ -50,8 +52,12 @@
 		676730F31D9BFF37003E1F81 /* HTTPBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTTPBuilder.m; path = Sources/Networking/HTTPBuilder.m; sourceTree = "<group>"; };
 		677205AC1D9DE2950049D598 /* GoT_wiki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoT_wiki.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		677205AD1D9DE2950049D598 /* GoT_wikiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoT_wikiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		677205AE1D9DE2950049D598 /* GoT_wikiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = GoT_wikiUITests.xctest; path = "/Users/pbogdan/workspace/GoT_wiki/build/Debug-iphoneos/GoT_wikiUITests.xctest"; sourceTree = "<absolute>"; };
 		67A725C21D9ED86F008D525E /* HomeViewTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewTest.m; sourceTree = "<group>"; };
+		67A725C41D9EDD58008D525E /* GoT_wikiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoT_wikiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		67A725C51D9EDF39008D525E /* HomeViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewControllerDelegate.h; path = Sources/Views/Home/HomeViewControllerDelegate.h; sourceTree = "<group>"; };
+		67A725C61D9EDF39008D525E /* HomeViewControllerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewControllerDelegate.m; path = Sources/Views/Home/HomeViewControllerDelegate.m; sourceTree = "<group>"; };
+		67A725C81D9EE69F008D525E /* HomeViewControllerDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewControllerDataSource.h; path = Sources/Views/Home/HomeViewControllerDataSource.h; sourceTree = "<group>"; };
+		67A725C91D9EE69F008D525E /* HomeViewControllerDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewControllerDataSource.m; path = Sources/Views/Home/HomeViewControllerDataSource.m; sourceTree = "<group>"; };
 		67D3C0221D9AEA2700CD5554 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = Sources/Views/Home/HomeViewController.h; sourceTree = "<group>"; };
 		67D3C0231D9AEA2700CD5554 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = Sources/Views/Home/HomeViewController.m; sourceTree = "<group>"; };
 		67D3C0241D9AEA2700CD5554 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HomeViewController.xib; path = Sources/Views/Home/HomeViewController.xib; sourceTree = "<group>"; };
@@ -108,6 +114,7 @@
 				0FFBBEC58A74FFF030F23D0B /* Frameworks */,
 				677205AC1D9DE2950049D598 /* GoT_wiki.app */,
 				677205AD1D9DE2950049D598 /* GoT_wikiTests.xctest */,
+				67A725C41D9EDD58008D525E /* GoT_wikiUITests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -174,6 +181,10 @@
 				67D3C0221D9AEA2700CD5554 /* HomeViewController.h */,
 				67D3C0231D9AEA2700CD5554 /* HomeViewController.m */,
 				67D3C0241D9AEA2700CD5554 /* HomeViewController.xib */,
+				67A725C51D9EDF39008D525E /* HomeViewControllerDelegate.h */,
+				67A725C61D9EDF39008D525E /* HomeViewControllerDelegate.m */,
+				67A725C81D9EE69F008D525E /* HomeViewControllerDataSource.h */,
+				67A725C91D9EE69F008D525E /* HomeViewControllerDataSource.m */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -272,7 +283,7 @@
 			);
 			name = GoT_wikiUITests;
 			productName = GoT_wikiUITests;
-			productReference = 677205AE1D9DE2950049D598 /* GoT_wikiUITests.xctest */;
+			productReference = 67A725C41D9EDD58008D525E /* GoT_wikiUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -472,8 +483,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				67D3C02D1D9AFF5C00CD5554 /* RequestFactory.m in Sources */,
+				67A725C71D9EDF39008D525E /* HomeViewControllerDelegate.m in Sources */,
 				676730F41D9BFF37003E1F81 /* HTTPBuilder.m in Sources */,
 				671DCBF21D986AFC00457F95 /* AppDelegate.m in Sources */,
+				67A725CA1D9EE69F008D525E /* HomeViewControllerDataSource.m in Sources */,
 				671DCBEF1D986AFC00457F95 /* main.m in Sources */,
 				67D3C0311D9B03F800CD5554 /* CharacterModel.m in Sources */,
 				67D3C0251D9AEA2700CD5554 /* HomeViewController.m in Sources */,

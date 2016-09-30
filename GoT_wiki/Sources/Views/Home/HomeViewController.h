@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HomeViewControllerDelegate.h"
+#import "HomeViewControllerDataSource.h"
 
 @interface HomeViewController : UITableViewController
+
+@property (retain) HomeViewControllerDelegate * delegate;
+@property (retain) HomeViewControllerDataSource * dataSource;
 
 @end
