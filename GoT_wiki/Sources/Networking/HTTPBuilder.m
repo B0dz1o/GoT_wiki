@@ -27,7 +27,7 @@
 }
 
 - (HTTPBuilder *)useDefaultBaseURL {
-    [self setBaseURL:@"http://gameofthrones.wikia.com/api/v1/"];
+    [self setBaseURL:@"https://gameofthrones.wikia.com/api/v1/"];
     return self;
 }
 

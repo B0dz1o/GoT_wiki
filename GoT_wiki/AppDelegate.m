@@ -27,8 +27,7 @@
     return YES;
 }
 
-- (void)applicationDidBecomeActive:(UIApplication *)application {
-    
+- (void)applicationDidBecomeActive:(UIApplication *)application {    
 }
 
 

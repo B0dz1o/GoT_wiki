@@ -8,6 +8,7 @@ branches:
     - master
     - develop
     - /^release\/[\w\.]+$/
+    - /^[\w\/]*testCI$/
 install:
   - gem install xcpretty
   - gem uninstall xcodeproj -v 1.3.1

@@ -15,6 +15,7 @@
 		67A725C31D9ED86F008D525E /* HomeViewTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A725C21D9ED86F008D525E /* HomeViewTest.m */; };
 		67A725C71D9EDF39008D525E /* HomeViewControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A725C61D9EDF39008D525E /* HomeViewControllerDelegate.m */; };
 		67A725CA1D9EE69F008D525E /* HomeViewControllerDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A725C91D9EE69F008D525E /* HomeViewControllerDataSource.m */; };
+		67A725D21D9F3BDD008D525E /* IntegrationTesting.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A725D11D9F3BDD008D525E /* IntegrationTesting.m */; };
 		67D3C0251D9AEA2700CD5554 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D3C0231D9AEA2700CD5554 /* HomeViewController.m */; };
 		67D3C0261D9AEA2700CD5554 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67D3C0241D9AEA2700CD5554 /* HomeViewController.xib */; };
 		67D3C02D1D9AFF5C00CD5554 /* RequestFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D3C02C1D9AFF5C00CD5554 /* RequestFactory.m */; };
@@ -30,6 +31,13 @@
 			remoteInfo = GoT_wiki;
 		};
 		671DCC121D986AFC00457F95 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 671DCBE21D986AFC00457F95 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 671DCBE91D986AFC00457F95;
+			remoteInfo = GoT_wiki;
+		};
+		67A725D41D9F3BDE008D525E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 671DCBE21D986AFC00457F95 /* Project object */;
 			proxyType = 1;
@@ -53,11 +61,14 @@
 		677205AC1D9DE2950049D598 /* GoT_wiki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoT_wiki.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		677205AD1D9DE2950049D598 /* GoT_wikiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoT_wikiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		67A725C21D9ED86F008D525E /* HomeViewTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewTest.m; sourceTree = "<group>"; };
-		67A725C41D9EDD58008D525E /* GoT_wikiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoT_wikiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		67A725C41D9EDD58008D525E /* GoT_wikiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = GoT_wikiUITests.xctest; path = "/Users/pbogdan/workspace/GoT_wiki/build/Debug-iphoneos/GoT_wikiUITests.xctest"; sourceTree = "<absolute>"; };
 		67A725C51D9EDF39008D525E /* HomeViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewControllerDelegate.h; path = Sources/Views/Home/HomeViewControllerDelegate.h; sourceTree = "<group>"; };
 		67A725C61D9EDF39008D525E /* HomeViewControllerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewControllerDelegate.m; path = Sources/Views/Home/HomeViewControllerDelegate.m; sourceTree = "<group>"; };
 		67A725C81D9EE69F008D525E /* HomeViewControllerDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewControllerDataSource.h; path = Sources/Views/Home/HomeViewControllerDataSource.h; sourceTree = "<group>"; };
 		67A725C91D9EE69F008D525E /* HomeViewControllerDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewControllerDataSource.m; path = Sources/Views/Home/HomeViewControllerDataSource.m; sourceTree = "<group>"; };
+		67A725CF1D9F3BDD008D525E /* IntegrationTesting.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = IntegrationTesting.xctest; path = "/Users/pbogdan/workspace/GoT_wiki/build/Debug-iphoneos/IntegrationTesting.xctest"; sourceTree = "<absolute>"; };
+		67A725D11D9F3BDD008D525E /* IntegrationTesting.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntegrationTesting.m; sourceTree = "<group>"; };
+		67A725D31D9F3BDE008D525E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67D3C0221D9AEA2700CD5554 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = Sources/Views/Home/HomeViewController.h; sourceTree = "<group>"; };
 		67D3C0231D9AEA2700CD5554 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = Sources/Views/Home/HomeViewController.m; sourceTree = "<group>"; };
 		67D3C0241D9AEA2700CD5554 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HomeViewController.xib; path = Sources/Views/Home/HomeViewController.xib; sourceTree = "<group>"; };
@@ -94,6 +105,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		67A725CC1D9F3BDD008D525E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -111,10 +129,10 @@
 				671DCC091D986AFC00457F95 /* GoT_wikiTests */,
 				671DCC141D986AFC00457F95 /* GoT_wikiUITests */,
 				875556FC26EC94958E95E691 /* Pods */,
+				67A725D01D9F3BDD008D525E /* IntegrationTesting */,
 				0FFBBEC58A74FFF030F23D0B /* Frameworks */,
 				677205AC1D9DE2950049D598 /* GoT_wiki.app */,
 				677205AD1D9DE2950049D598 /* GoT_wikiTests.xctest */,
-				67A725C41D9EDD58008D525E /* GoT_wikiUITests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -155,6 +173,15 @@
 				671DCC171D986AFC00457F95 /* Info.plist */,
 			);
 			path = GoT_wikiUITests;
+			sourceTree = "<group>";
+		};
+		67A725D01D9F3BDD008D525E /* IntegrationTesting */ = {
+			isa = PBXGroup;
+			children = (
+				67A725D11D9F3BDD008D525E /* IntegrationTesting.m */,
+				67A725D31D9F3BDE008D525E /* Info.plist */,
+			);
+			path = IntegrationTesting;
 			sourceTree = "<group>";
 		};
 		67D3C01D1D9AE90500CD5554 /* Sources */ = {
@@ -286,6 +313,24 @@
 			productReference = 67A725C41D9EDD58008D525E /* GoT_wikiUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		67A725CE1D9F3BDD008D525E /* IntegrationTesting */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67A725D61D9F3BDE008D525E /* Build configuration list for PBXNativeTarget "IntegrationTesting" */;
+			buildPhases = (
+				67A725CB1D9F3BDD008D525E /* Sources */,
+				67A725CC1D9F3BDD008D525E /* Frameworks */,
+				67A725CD1D9F3BDD008D525E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				67A725D51D9F3BDE008D525E /* PBXTargetDependency */,
+			);
+			name = IntegrationTesting;
+			productName = IntegrationTesting;
+			productReference = 67A725CF1D9F3BDD008D525E /* IntegrationTesting.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -303,6 +348,10 @@
 						TestTargetID = 671DCBE91D986AFC00457F95;
 					};
 					671DCC101D986AFC00457F95 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 671DCBE91D986AFC00457F95;
+					};
+					67A725CE1D9F3BDD008D525E = {
 						CreatedOnToolsVersion = 7.3.1;
 						TestTargetID = 671DCBE91D986AFC00457F95;
 					};
@@ -324,6 +373,7 @@
 				671DCBE91D986AFC00457F95 /* GoT_wiki */,
 				671DCC051D986AFC00457F95 /* GoT_wikiTests */,
 				671DCC101D986AFC00457F95 /* GoT_wikiUITests */,
+				67A725CE1D9F3BDD008D525E /* IntegrationTesting */,
 			);
 		};
 /* End PBXProject section */
@@ -346,6 +396,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		671DCC0F1D986AFC00457F95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67A725CD1D9F3BDD008D525E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -509,6 +566,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		67A725CB1D9F3BDD008D525E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67A725D21D9F3BDD008D525E /* IntegrationTesting.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -521,6 +586,11 @@
 			isa = PBXTargetDependency;
 			target = 671DCBE91D986AFC00457F95 /* GoT_wiki */;
 			targetProxy = 671DCC121D986AFC00457F95 /* PBXContainerItemProxy */;
+		};
+		67A725D51D9F3BDE008D525E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 671DCBE91D986AFC00457F95 /* GoT_wiki */;
+			targetProxy = 67A725D41D9F3BDE008D525E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -689,6 +759,32 @@
 			};
 			name = Release;
 		};
+		67A725D71D9F3BDE008D525E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = IntegrationTesting/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.b0dz1o.IntegrationTesting;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoT_wiki.app/GoT_wiki";
+			};
+			name = Debug;
+		};
+		67A725D81D9F3BDE008D525E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = IntegrationTesting/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.b0dz1o.IntegrationTesting;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoT_wiki.app/GoT_wiki";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -724,6 +820,15 @@
 			buildConfigurations = (
 				671DCC211D986AFC00457F95 /* Debug */,
 				671DCC221D986AFC00457F95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67A725D61D9F3BDE008D525E /* Build configuration list for PBXNativeTarget "IntegrationTesting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67A725D71D9F3BDE008D525E /* Debug */,
+				67A725D81D9F3BDE008D525E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
