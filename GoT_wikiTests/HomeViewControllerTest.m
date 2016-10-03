@@ -20,6 +20,8 @@
 
 @implementation HomeViewControllerTest
 
+@synthesize vc;
+
 - (void)setUp {
     [super setUp];
     HomeViewController *newVC = [[HomeViewController alloc] initWithNibName:@"HomeViewController" bundle:nil];
