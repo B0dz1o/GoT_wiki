@@ -7,7 +7,8 @@
 //
 
 #import "HomeViewController.h"
-
+#import "RequestFactory.h"
+#import "HomeViewCell.h"
 
 @implementation HomeViewController
 
@@ -24,26 +25,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [[self tableView] setDataSource:[self dataSource]];
-    [[self tableView] setDelegate:[self delegate]];
+    [self configureTableView];
+    
+    UINib *nib = [UINib nibWithNibName:@"HomeViewCell" bundle:nil];
+    [[self tableView] registerNib:nib forCellReuseIdentifier:@"HomeViewCell"];
+    [[[RequestFactory sharedObject] runTask:CHARACTER_LIST withHandler:^(NSData *d, NSURLResponse *r, NSError *e) {
+//        TODO
+    }] resume];
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-}
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 0;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 0;
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"HomeViewCell" forIndexPath:indexPath];
-    return cell;
+- (void) configureTableView {
+    UITableView *tableView =[self tableView];
+    
+    [tableView setDataSource:[self dataSource]];
+    [tableView setDelegate:[self delegate]];
+    
+    [tableView setRowHeight:UITableViewAutomaticDimension];
+    [tableView setEstimatedRowHeight:70];
 }
 
 @end
