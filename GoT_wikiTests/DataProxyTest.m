@@ -36,13 +36,13 @@
     NSURLResponse *resp = [[NSURLResponse alloc] initWithURL:[NSURL URLWithString:@""] MIMEType:nil expectedContentLength:0 textEncodingName:@"utf-8"];
     NSData *data = [[self responseText] dataUsingEncoding:NSUTF8StringEncoding];
     [dp parseData:data fromResponse:resp];
-    XCTAssertEqual([[ds characters] count], 2);
+    XCTAssertEqual([[dp characters] count], 2);
 }
 
 - (void)testASCIIParsing {
     NSData *data = [[self responseText] dataUsingEncoding:NSASCIIStringEncoding];
     [dp parseData:data fromResponse:nil];
-    XCTAssertEqual([[ds characters] count], 2);
+    XCTAssertEqual([[dp characters] count], 2);
 }
 
 @end

@@ -7,15 +7,20 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import "CharacterItem.h"
 
 @class HomeViewDataSource;
 
 @interface DataProxy : NSObject
 
+@property NSArray <CharacterItem *> *characters;
+@property NSString * baseURL;
 @property (weak) HomeViewDataSource * ownerDS;
 @property void (^requestHandler)(NSData *, NSURLResponse *, NSError *);
+@property NSMutableDictionary<NSString*, UIImage*> *images;
 
 - (void)startDownloadingData;
-- (void) parseData: (NSData *) data fromResponse: (NSURLResponse *) response;
+- (void)parseData: (NSData *) data fromResponse: (NSURLResponse *) response;
 
 @end

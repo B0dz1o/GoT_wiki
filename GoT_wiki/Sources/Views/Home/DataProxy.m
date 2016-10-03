@@ -13,8 +13,11 @@
 
 @implementation DataProxy
 
+@synthesize characters;
+@synthesize baseURL;
 @synthesize ownerDS;
 @synthesize requestHandler;
+@synthesize images;
 
 - (void)startDownloadingData {
     if ([self requestHandler] == nil) {
@@ -33,8 +36,8 @@
     JSONModelError *err;
     WholeResponse* whRes = [[WholeResponse alloc] initWithString:result error:&err];
     if (err == nil) {
-        [[self ownerDS] setCharacters:[whRes items]];
-        [[self ownerDS] setBaseURL:[whRes basepath]];
+        [self setCharacters:[whRes items]];
+        [self setBaseURL:[whRes basepath]];
     }
 }
 
@@ -44,12 +47,25 @@
             return;
         }
         [self parseData:d fromResponse:r];
-        if ([[[self ownerDS] ownerVC] isViewLoaded]){
-            dispatch_async(dispatch_get_main_queue(), ^{
-                [[[[self ownerDS] ownerVC] tableView] reloadData];
-            });
-        };
+        [self startDownloadingImages];
+        [[self ownerDS] callDataReload];
     }];
+}
+
+- (void) startDownloadingImages {
+    NSUInteger i;
+    NSUInteger limit = [[self characters] count];
+    images = [NSMutableDictionary dictionaryWithCapacity:limit];
+    for (i = 0; i < limit ; ++i) {
+        [[[RequestFactory sharedObject] runAbsoluteUrlSecured:[[characters objectAtIndex:i] thumbnail] withHandler:
+         ^(NSData *d, NSURLResponse *r, NSError *e) {
+             if (e != nil){
+                 return;
+             }
+             UIImage *img = [UIImage imageWithData:d];
+             [images setObject:img forKey:[NSString stringWithFormat:@"%d", i]];
+        }] resume];
+    }
 }
 
 @end

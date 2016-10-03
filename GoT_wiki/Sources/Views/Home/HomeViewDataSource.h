@@ -13,11 +13,10 @@
 
 @interface HomeViewDataSource : NSObject <UITableViewDataSource>
 
-@property NSArray <CharacterItem *> *characters;
-@property (weak) UITableViewController * ownerVC;
-@property NSString * baseURL;
 @property DataProxy *proxy;
+@property (weak) UITableViewController * ownerVC;
 
 - (void) startDownloadingData;
+- (void) callDataReload;
 
 @end
