@@ -6,9 +6,9 @@
 //  Copyright © 2016 Piotr Bogdan. All rights reserved.
 //
 
-#import "HomeViewControllerDelegate.h"
+#import "HomeViewDelegate.h"
 
-@implementation HomeViewControllerDelegate
+@implementation HomeViewDelegate
 
  - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 //  Navigation logic may go here, for example:

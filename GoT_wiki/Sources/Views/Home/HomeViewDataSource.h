@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface HomeViewControllerDataSource : NSObject <UITableViewDataSource>
+@interface HomeViewDataSource : NSObject <UITableViewDataSource>
 
 @end

@@ -17,8 +17,8 @@
 
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]){
-        [self setDataSource:[[HomeViewControllerDataSource alloc] init]];
-        [self setDelegate:[[HomeViewControllerDelegate alloc] init]];
+        [self setDataSource:[[HomeViewDataSource alloc] init]];
+        [self setDelegate:[[HomeViewDelegate alloc] init]];
     }
     return self;
 }

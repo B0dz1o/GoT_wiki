@@ -6,10 +6,10 @@
 //  Copyright © 2016 Piotr Bogdan. All rights reserved.
 //
 
-#import "HomeViewControllerDataSource.h"
+#import "HomeViewDataSource.h"
 #import "HomeViewCell.h"
 
-@implementation HomeViewControllerDataSource
+@implementation HomeViewDataSource
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
