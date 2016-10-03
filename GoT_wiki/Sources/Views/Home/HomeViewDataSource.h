@@ -9,12 +9,14 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "WholeResponse.h"
+#import "DataProxy.h"
 
 @interface HomeViewDataSource : NSObject <UITableViewDataSource>
 
 @property NSArray <CharacterItem *> *characters;
 @property (weak) UITableViewController * ownerVC;
 @property NSString * baseURL;
+@property DataProxy *proxy;
 
 - (void) startDownloadingData;
 
