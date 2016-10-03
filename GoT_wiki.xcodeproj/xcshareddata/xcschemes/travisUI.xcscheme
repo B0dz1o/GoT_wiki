@@ -17,9 +17,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "671DCC101D986AFC00457F95"
-               BuildableName = "GoT_wikiUITests.xctest"
-               BlueprintName = "GoT_wikiUITests"
+               BlueprintIdentifier = "671DCC051D986AFC00457F95"
+               BuildableName = "GoT_wikiTests.xctest"
+               BlueprintName = "GoT_wikiTests"
                ReferencedContainer = "container:GoT_wiki.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -27,9 +27,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "671DCC051D986AFC00457F95"
-               BuildableName = "GoT_wikiTests.xctest"
-               BlueprintName = "GoT_wikiTests"
+               BlueprintIdentifier = "671DCC101D986AFC00457F95"
+               BuildableName = "GoT_wikiUITests.xctest"
+               BlueprintName = "GoT_wikiUITests"
                ReferencedContainer = "container:GoT_wiki.xcodeproj">
             </BuildableReference>
          </TestableReference>

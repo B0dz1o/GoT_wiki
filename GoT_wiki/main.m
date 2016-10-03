@@ -8,9 +8,18 @@
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
+#import "TestAppDelegate.h"
 
 int main(int argc, char * argv[]) {
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
+        int returnValue;
+        BOOL isTesting = ( NSClassFromString(@"HomeViewControllerTest") != nil );
+        if (isTesting) {
+            returnValue = UIApplicationMain(argc, argv, nil, NSStringFromClass([TestAppDelegate class]));
+        }
+        else {
+            returnValue = UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
+        }
+        return returnValue;
     }
 }

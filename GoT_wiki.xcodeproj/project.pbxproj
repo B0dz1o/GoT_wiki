@@ -13,7 +13,8 @@
 		671DCC0B1D986AFC00457F95 /* NetworkingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 671DCC0A1D986AFC00457F95 /* NetworkingTest.m */; };
 		67657CF21DA1DB4E006A6D27 /* HomeViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 67657CF01DA1DB4E006A6D27 /* HomeViewCell.m */; };
 		67657CF31DA1DB4E006A6D27 /* HomeViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67657CF11DA1DB4E006A6D27 /* HomeViewCell.xib */; };
-		67657CF51DA1F4C3006A6D27 /* HomeViewTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 67657CF41DA1F4C3006A6D27 /* HomeViewTest.m */; };
+		67657CF51DA1F4C3006A6D27 /* HomeViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 67657CF41DA1F4C3006A6D27 /* HomeViewControllerTest.m */; };
+		67657CF91DA1FEFA006A6D27 /* TestAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 67657CF81DA1FEFA006A6D27 /* TestAppDelegate.m */; };
 		676730F41D9BFF37003E1F81 /* HTTPBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 676730F31D9BFF37003E1F81 /* HTTPBuilder.m */; };
 		67A725C31D9ED86F008D525E /* HomeViewTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A725C21D9ED86F008D525E /* HomeViewTest.m */; };
 		67A725C71D9EDF39008D525E /* HomeViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A725C61D9EDF39008D525E /* HomeViewDelegate.m */; };
@@ -62,18 +63,20 @@
 		67657CEF1DA1DB4E006A6D27 /* HomeViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewCell.h; path = Sources/Views/HomeCell/HomeViewCell.h; sourceTree = "<group>"; };
 		67657CF01DA1DB4E006A6D27 /* HomeViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewCell.m; path = Sources/Views/HomeCell/HomeViewCell.m; sourceTree = "<group>"; };
 		67657CF11DA1DB4E006A6D27 /* HomeViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HomeViewCell.xib; path = Sources/Views/HomeCell/HomeViewCell.xib; sourceTree = "<group>"; };
-		67657CF41DA1F4C3006A6D27 /* HomeViewTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewTest.m; sourceTree = "<group>"; };
+		67657CF41DA1F4C3006A6D27 /* HomeViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewControllerTest.m; sourceTree = "<group>"; };
+		67657CF71DA1FEFA006A6D27 /* TestAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestAppDelegate.h; path = Sources/TestDelegate/TestAppDelegate.h; sourceTree = "<group>"; };
+		67657CF81DA1FEFA006A6D27 /* TestAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestAppDelegate.m; path = Sources/TestDelegate/TestAppDelegate.m; sourceTree = "<group>"; };
+		67657CFF1DA20577006A6D27 /* GoT_wikiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoT_wikiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		67657D001DA20577006A6D27 /* IntegrationTesting.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IntegrationTesting.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		676730F21D9BFF37003E1F81 /* HTTPBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTTPBuilder.h; path = Sources/Networking/HTTPBuilder.h; sourceTree = "<group>"; };
 		676730F31D9BFF37003E1F81 /* HTTPBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTTPBuilder.m; path = Sources/Networking/HTTPBuilder.m; sourceTree = "<group>"; };
 		677205AC1D9DE2950049D598 /* GoT_wiki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoT_wiki.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		677205AD1D9DE2950049D598 /* GoT_wikiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoT_wikiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		67A725C21D9ED86F008D525E /* HomeViewTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewTest.m; sourceTree = "<group>"; };
-		67A725C41D9EDD58008D525E /* GoT_wikiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = GoT_wikiUITests.xctest; path = "/Users/pbogdan/workspace/GoT_wiki/build/Debug-iphoneos/GoT_wikiUITests.xctest"; sourceTree = "<absolute>"; };
 		67A725C51D9EDF39008D525E /* HomeViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewDelegate.h; path = Sources/Views/Home/HomeViewDelegate.h; sourceTree = "<group>"; };
 		67A725C61D9EDF39008D525E /* HomeViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewDelegate.m; path = Sources/Views/Home/HomeViewDelegate.m; sourceTree = "<group>"; };
 		67A725C81D9EE69F008D525E /* HomeViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewDataSource.h; path = Sources/Views/Home/HomeViewDataSource.h; sourceTree = "<group>"; };
 		67A725C91D9EE69F008D525E /* HomeViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewDataSource.m; path = Sources/Views/Home/HomeViewDataSource.m; sourceTree = "<group>"; };
-		67A725CF1D9F3BDD008D525E /* IntegrationTesting.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = IntegrationTesting.xctest; path = "/Users/pbogdan/workspace/GoT_wiki/build/Debug-iphoneos/IntegrationTesting.xctest"; sourceTree = "<absolute>"; };
 		67A725D11D9F3BDD008D525E /* IntegrationTesting.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntegrationTesting.m; sourceTree = "<group>"; };
 		67A725D31D9F3BDE008D525E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67D3C0221D9AEA2700CD5554 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = Sources/Views/Home/HomeViewController.h; sourceTree = "<group>"; };
@@ -140,6 +143,8 @@
 				0FFBBEC58A74FFF030F23D0B /* Frameworks */,
 				677205AC1D9DE2950049D598 /* GoT_wiki.app */,
 				677205AD1D9DE2950049D598 /* GoT_wikiTests.xctest */,
+				67657CFF1DA20577006A6D27 /* GoT_wikiUITests.xctest */,
+				67657D001DA20577006A6D27 /* IntegrationTesting.xctest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -167,7 +172,7 @@
 		671DCC091D986AFC00457F95 /* GoT_wikiTests */ = {
 			isa = PBXGroup;
 			children = (
-				67657CF41DA1F4C3006A6D27 /* HomeViewTest.m */,
+				67657CF41DA1F4C3006A6D27 /* HomeViewControllerTest.m */,
 				671DCC0A1D986AFC00457F95 /* NetworkingTest.m */,
 				671DCC0C1D986AFC00457F95 /* Info.plist */,
 			);
@@ -193,6 +198,15 @@
 			name = HomeCell;
 			sourceTree = "<group>";
 		};
+		67657CF61DA1FED9006A6D27 /* TestDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				67657CF71DA1FEFA006A6D27 /* TestAppDelegate.h */,
+				67657CF81DA1FEFA006A6D27 /* TestAppDelegate.m */,
+			);
+			name = TestDelegate;
+			sourceTree = "<group>";
+		};
 		67A725D01D9F3BDD008D525E /* IntegrationTesting */ = {
 			isa = PBXGroup;
 			children = (
@@ -205,6 +219,7 @@
 		67D3C01D1D9AE90500CD5554 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				67657CF61DA1FED9006A6D27 /* TestDelegate */,
 				67D3C02E1D9B03D000CD5554 /* Models */,
 				67D3C02A1D9AFCC200CD5554 /* Networking */,
 				67D3C01F1D9AE9B900CD5554 /* Views */,
@@ -329,7 +344,7 @@
 			);
 			name = GoT_wikiUITests;
 			productName = GoT_wikiUITests;
-			productReference = 67A725C41D9EDD58008D525E /* GoT_wikiUITests.xctest */;
+			productReference = 67657CFF1DA20577006A6D27 /* GoT_wikiUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		67A725CE1D9F3BDD008D525E /* IntegrationTesting */ = {
@@ -347,7 +362,7 @@
 			);
 			name = IntegrationTesting;
 			productName = IntegrationTesting;
-			productReference = 67A725CF1D9F3BDD008D525E /* IntegrationTesting.xctest */;
+			productReference = 67657D001DA20577006A6D27 /* IntegrationTesting.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -567,6 +582,7 @@
 				67A725CA1D9EE69F008D525E /* HomeViewDataSource.m in Sources */,
 				671DCBEF1D986AFC00457F95 /* main.m in Sources */,
 				67D3C0311D9B03F800CD5554 /* CharacterModel.m in Sources */,
+				67657CF91DA1FEFA006A6D27 /* TestAppDelegate.m in Sources */,
 				67D3C0251D9AEA2700CD5554 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -576,7 +592,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				671DCC0B1D986AFC00457F95 /* NetworkingTest.m in Sources */,
-				67657CF51DA1F4C3006A6D27 /* HomeViewTest.m in Sources */,
+				67657CF51DA1F4C3006A6D27 /* HomeViewControllerTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

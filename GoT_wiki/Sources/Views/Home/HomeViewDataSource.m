@@ -28,8 +28,4 @@
     return NO;
 }
 
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    return NO;
-}
-
 @end
