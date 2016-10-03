@@ -25,11 +25,13 @@
 }
 
 - (void)testTableView {
-    XCUIApplication *app = [[XCUIApplication alloc] init];
-    XCUIElement *emptyListTable = app.tables[@"Empty list"];
-    [emptyListTable tap];
-    [emptyListTable doubleTap];
-    [[XCUIDevice sharedDevice] pressButton:XCUIDeviceButtonHome];
+    XCUIElementQuery *cellsQuery = [[XCUIApplication alloc] init].tables.cells;
+    XCUIElement *labelStaticText = [[[cellsQuery childrenMatchingType:XCUIElementTypeStaticText] matchingIdentifier:@"Label"] elementBoundByIndex:1];
+    [labelStaticText tap];
+    [labelStaticText swipeDown];
+    [labelStaticText swipeUp];
+    [labelStaticText doubleTap];
+    [[XCUIDevice sharedDevice] pressButton:XCUIDeviceButtonHome];   
 }
 
 @end

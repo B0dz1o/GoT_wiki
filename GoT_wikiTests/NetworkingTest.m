@@ -20,6 +20,7 @@
 @implementation NetworkingTest
 
 @synthesize factory;
+@synthesize builder;
 
 - (void)setUp {
     [super setUp];
@@ -64,23 +65,23 @@
                       @"category":@"Characters",
                       @"limit":@75}];
     NSString * addr = [[[[[self builder] buildTask] currentRequest] URL] absoluteString];
-    BOOL bit32 = [addr isEqualToString:@"http://gameofthrones.wikia.com/api/v1/Articles/Top?expand=1&category=Characters&limit=75"];
-    BOOL bit64 = [addr isEqualToString:@"http://gameofthrones.wikia.com/api/v1/Articles/Top?category=Characters&limit=75&expand=1"];
+    BOOL bit32 = [addr isEqualToString:@"https://gameofthrones.wikia.com/api/v1/Articles/Top?expand=1&category=Characters&limit=75"];
+    BOOL bit64 = [addr isEqualToString:@"https://gameofthrones.wikia.com/api/v1/Articles/Top?category=Characters&limit=75&expand=1"];
     XCTAssertTrue(bit32 || bit64);
     addr = [[[[[[self builder] useParameters:@{@"limit":@75}] buildTask] currentRequest] URL] absoluteString];
-    XCTAssertTrue([addr isEqualToString:@"http://gameofthrones.wikia.com/api/v1/Articles/Top?limit=75"]);
+    XCTAssertTrue([addr isEqualToString:@"https://gameofthrones.wikia.com/api/v1/Articles/Top?limit=75"]);
     addr = [[[[[self builder] buildTaskWithURL:addr] currentRequest] URL] absoluteString];
-    XCTAssertTrue([addr isEqualToString:@"http://gameofthrones.wikia.com/api/v1/Articles/Top?limit=75"]);
+    XCTAssertTrue([addr isEqualToString:@"https://gameofthrones.wikia.com/api/v1/Articles/Top?limit=75"]);
 }
 
 - (void) testFactoryRequestCreation {
     NSURLSessionDataTask * task = [factory runTask:CHARACTER_LIST withHandler:nil];
     NSString * addr = [[[task currentRequest] URL] absoluteString];
-    BOOL bit32 = [addr isEqualToString:@"http://gameofthrones.wikia.com/api/v1/Articles/Top?expand=1&category=Characters&limit=75"];
-    BOOL bit64 = [addr isEqualToString:@"http://gameofthrones.wikia.com/api/v1/Articles/Top?category=Characters&limit=75&expand=1"];
+    BOOL bit32 = [addr isEqualToString:@"https://gameofthrones.wikia.com/api/v1/Articles/Top?expand=1&category=Characters&limit=75"];
+    BOOL bit64 = [addr isEqualToString:@"https://gameofthrones.wikia.com/api/v1/Articles/Top?category=Characters&limit=75&expand=1"];
     XCTAssertTrue(bit32 || bit64);
     
-    NSString * jonSnowURL = @"http://vignette3.wikia.nocookie.net/gameofthrones/images/4/49/Battle_of_the_Bastards_08.jpg/revision/latest/window-crop/width/200/x-offset/0/y-offset/0/window-width/2700/window-height/2700?cb=20160615184845";
+    NSString * jonSnowURL = @"https://vignette3.wikia.nocookie.net/gameofthrones/images/4/49/Battle_of_the_Bastards_08.jpg/revision/latest/window-crop/width/200/x-offset/0/y-offset/0/window-width/2700/window-height/2700?cb=20160615184845";
     task = [factory runAbsoluteUrl:jonSnowURL withHandler:nil];
     XCTAssertTrue([[[[task currentRequest] URL] absoluteString] isEqualToString:jonSnowURL]);
 }
@@ -105,6 +106,18 @@
                         withHandler:^(NSData *d, NSURLResponse *r, NSError *e) {}];
         }
     }];
+}
+
+- (void) testIntegration {
+    XCTestExpectation * expect = [self expectationWithDescription:@"API_response"];
+    void (^handler)(NSData * d, NSURLResponse *r , NSError * e) = ^(NSData * d, NSURLResponse *r , NSError * e){
+        if (e != nil){
+            return;
+        }
+        [expect fulfill];
+    };
+    [[factory runTask:CHARACTER_LIST withHandler:handler] resume];
+    [self waitForExpectationsWithTimeout:10 handler:nil];
 }
 
 @end

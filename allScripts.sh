@@ -36,9 +36,10 @@ echo ''
 travis_time_start
 echo ''
 bash scripts/ip4s.sh
+CODE=$?
 echo ''
 travis_time_finish
-if [ $? -ne 0 ];
+if [ $CODE -ne 0 ];
 then
 	exit 1
 fi
@@ -48,10 +49,12 @@ echo ''
 travis_time_start
 echo ''
 bash scripts/ip5s.sh
+CODE=$?
 echo ''
 travis_time_finish
-if [ $? -ne 0 ];
+if [ $CODE -ne 0 ];
 then
 	exit 1
 fi
+
 exit 0
