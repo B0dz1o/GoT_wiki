@@ -18,7 +18,9 @@
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]){
         [self setDataSource:[[HomeViewDataSource alloc] init]];
+        [[self dataSource] setOwnerVC:self];
         [self setDelegate:[[HomeViewDelegate alloc] init]];
+        [[self dataSource] startDownloadingData];
     }
     return self;
 }
@@ -29,9 +31,6 @@
     
     UINib *nib = [UINib nibWithNibName:@"HomeViewCell" bundle:nil];
     [[self tableView] registerNib:nib forCellReuseIdentifier:@"HomeViewCell"];
-    [[[RequestFactory sharedObject] runTask:CHARACTER_LIST withHandler:^(NSData *d, NSURLResponse *r, NSError *e) {
-//        TODO
-    }] resume];
 }
 
 - (void) configureTableView {

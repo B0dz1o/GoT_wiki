@@ -17,4 +17,9 @@ target 'GoT_wiki' do
     pod 'Realm/Headers', :podspec => 'podspecs/Realm.podspec' 
   end
 
+  target 'IntegrationTesting' do
+    inherit! :search_paths
+    pod 'Realm/Headers', :podspec => 'podspecs/Realm.podspec'
+  end
+
 end

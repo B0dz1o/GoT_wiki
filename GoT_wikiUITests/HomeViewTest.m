@@ -26,7 +26,7 @@
 
 - (void)testTableView {
     XCUIElementQuery *cellsQuery = [[XCUIApplication alloc] init].tables.cells;
-    XCUIElement *labelStaticText = [[[cellsQuery childrenMatchingType:XCUIElementTypeStaticText] matchingIdentifier:@"Label"] elementBoundByIndex:1];
+    XCUIElement *labelStaticText = [[cellsQuery childrenMatchingType:XCUIElementTypeStaticText] elementAtIndex:1];
     [labelStaticText tap];
     [labelStaticText swipeDown];
     [labelStaticText swipeUp];
