@@ -12,7 +12,7 @@
 
 @interface HomeViewController : UITableViewController
 
-@property (retain) HomeViewDelegate * delegate;
-@property (retain) HomeViewDataSource * dataSource;
+@property HomeViewDelegate * delegate;
+@property HomeViewDataSource * dataSource;
 
 @end

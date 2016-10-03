@@ -8,7 +8,14 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "WholeResponse.h"
 
 @interface HomeViewDataSource : NSObject <UITableViewDataSource>
+
+@property NSArray <CharacterItem *> *characters;
+@property (weak) UITableViewController * ownerVC;
+@property NSString * baseURL;
+
+- (void) startDownloadingData;
 
 @end

@@ -26,7 +26,6 @@
 		67D3C0251D9AEA2700CD5554 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D3C0231D9AEA2700CD5554 /* HomeViewController.m */; };
 		67D3C0261D9AEA2700CD5554 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67D3C0241D9AEA2700CD5554 /* HomeViewController.xib */; };
 		67D3C02D1D9AFF5C00CD5554 /* RequestFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D3C02C1D9AFF5C00CD5554 /* RequestFactory.m */; };
-		67D3C0311D9B03F800CD5554 /* CharacterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D3C0301D9B03F800CD5554 /* CharacterModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,8 +91,6 @@
 		67D3C0241D9AEA2700CD5554 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HomeViewController.xib; path = Sources/Views/Home/HomeViewController.xib; sourceTree = "<group>"; };
 		67D3C02B1D9AFF5C00CD5554 /* RequestFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RequestFactory.h; path = Sources/Networking/RequestFactory.h; sourceTree = "<group>"; };
 		67D3C02C1D9AFF5C00CD5554 /* RequestFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RequestFactory.m; path = Sources/Networking/RequestFactory.m; sourceTree = "<group>"; };
-		67D3C02F1D9B03F800CD5554 /* CharacterModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CharacterModel.h; path = Sources/Models/CharacterModel.h; sourceTree = "<group>"; };
-		67D3C0301D9B03F800CD5554 /* CharacterModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CharacterModel.m; path = Sources/Models/CharacterModel.m; sourceTree = "<group>"; };
 		69C0027C0483D08C4302C56D /* Pods-GoT_wikiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoT_wikiTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoT_wikiTests/Pods-GoT_wikiTests.release.xcconfig"; sourceTree = "<group>"; };
 		AA007105AA3A7F7C4C6B9E12 /* Pods-GoT_wikiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoT_wikiUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoT_wikiUITests/Pods-GoT_wikiUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B9AE0A9F2C6FBC98450915D9 /* Pods-GoT_wikiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoT_wikiTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoT_wikiTests/Pods-GoT_wikiTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -285,8 +282,6 @@
 			isa = PBXGroup;
 			children = (
 				67657D011DA25F7E006A6D27 /* JSONModel */,
-				67D3C02F1D9B03F800CD5554 /* CharacterModel.h */,
-				67D3C0301D9B03F800CD5554 /* CharacterModel.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -604,7 +599,6 @@
 				67657D0D1DA265C6006A6D27 /* CharacterItem.m in Sources */,
 				67A725CA1D9EE69F008D525E /* HomeViewDataSource.m in Sources */,
 				671DCBEF1D986AFC00457F95 /* main.m in Sources */,
-				67D3C0311D9B03F800CD5554 /* CharacterModel.m in Sources */,
 				67657CF91DA1FEFA006A6D27 /* TestAppDelegate.m in Sources */,
 				67D3C0251D9AEA2700CD5554 /* HomeViewController.m in Sources */,
 			);
@@ -668,11 +662,17 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = YES;
+				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_MISSING_PROPERTY_SYNTHESIS = YES;
+				CLANG_WARN_OBJC_REPEATED_USE_OF_WEAK = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -690,7 +690,10 @@
 					"$(inherited)",
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
+				GCC_WARN_PEDANTIC = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
@@ -713,11 +716,17 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = YES;
+				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_MISSING_PROPERTY_SYNTHESIS = YES;
+				CLANG_WARN_OBJC_REPEATED_USE_OF_WEAK = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -729,7 +738,10 @@
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
+				GCC_WARN_PEDANTIC = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;

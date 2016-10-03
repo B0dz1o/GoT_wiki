@@ -53,7 +53,6 @@
     BOOL bit32 = [[[self builder] paramsString] isEqualToString:@"?category=Characters&limit=75&expand=1"];
     BOOL bit64 = [[[self builder] paramsString] isEqualToString:@"?expand=1&category=Characters&limit=75"];
     XCTAssertTrue(bit32 || bit64);
-    NSLog(@"%@", [[self builder] paramsString]);
     [[self builder] useParameters:nil];
     XCTAssertNil([[self builder] paramsString]);
     [[self builder] useParameters:@{@"limit":@75}];

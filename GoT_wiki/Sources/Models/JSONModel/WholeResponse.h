@@ -12,6 +12,7 @@
 
 @interface WholeResponse : JSONModel
 
+@property NSString * basepath;
 @property NSArray <CharacterItem> * items;
 
 @end

@@ -40,5 +40,14 @@ typedef enum {
  */
 -(NSURLSessionDataTask *) runAbsoluteUrl: (NSString *) absUrl
                       withHandler:(void (^)(NSData*, NSURLResponse*, NSError*)) handler;
+/**Abstract layer around server communication access
+ 
+ Replace http protocol with https
+ @param absUrl String URL to get data from. "http" will be replaced with "https"
+ @param handler Block to make use of server reponse data or error
+ @returns Data task object to be called
+ */
+-(NSURLSessionDataTask *) runAbsoluteUrlSecured: (NSString *) absUrl
+                             withHandler:(void (^)(NSData*, NSURLResponse*, NSError*)) handler;
 
 @end

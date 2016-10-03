@@ -32,15 +32,15 @@
 
 - (NSURLSessionDataTask *)runTask:(RequestTypes)type withHandler:(void (^)(NSData *, NSURLResponse *, NSError *))handler {
     NSURLSessionDataTask* task;
-    [builder useDefaultBaseURL];
+    [[self builder] useDefaultBaseURL];
     switch(type) {
         case CHARACTER_LIST:
-            [[[builder usePath:@"Articles/Top"]
+            [[[[self builder] usePath:@"Articles/Top"]
              useParameters: @{@"expand":@1,
                               @"category":@"Characters",
                               @"limit":@75}]
              useRequestHandler:handler];
-            task = [builder buildTask];
+            task = [[self builder] buildTask];
             break;
         default:
             task = nil;
@@ -52,5 +52,11 @@
 - (NSURLSessionDataTask *)runAbsoluteUrl:(NSString *)absUrl withHandler:(void (^)(NSData *, NSURLResponse *, NSError *))handler {
     return [[builder useRequestHandler:handler] buildTaskWithURL:absUrl];
 }
+
+- (NSURLSessionDataTask *)runAbsoluteUrlSecured:(NSString *)absUrl withHandler:(void (^)(NSData *, NSURLResponse *, NSError *))handler {
+    NSString * securedURL = [absUrl stringByReplacingOccurrencesOfString:@"http://" withString:@"https://"];
+    return [self runAbsoluteUrlSecured:securedURL withHandler:handler];
+}
+
 
 @end
