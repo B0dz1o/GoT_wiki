@@ -25,13 +25,24 @@
 }
 
 - (void)testTableView {
-    XCUIElementQuery *cellsQuery = [[XCUIApplication alloc] init].tables.cells;
-    XCUIElement *labelStaticText = [[cellsQuery childrenMatchingType:XCUIElementTypeStaticText] elementAtIndex:1];
-    [labelStaticText tap];
-    [labelStaticText swipeDown];
-    [labelStaticText swipeUp];
-    [labelStaticText doubleTap];
-    [[XCUIDevice sharedDevice] pressButton:XCUIDeviceButtonHome];   
+    XCUIElementQuery *tablesQuery = [[XCUIApplication alloc] init].tables;
+    XCUIElement *dany = tablesQuery.staticTexts[@"Daenerys Targaryen"];
+    XCUIElement *rhaegar = tablesQuery.staticTexts[@"Rhaegar Targaryen"];
+    XCUIElement *jon = tablesQuery.staticTexts[@"Jon Snow"];
+    NSPredicate *exists = [NSPredicate predicateWithFormat:@"exists == 1"];
+    [self expectationForPredicate:exists evaluatedWithObject:dany handler:nil];
+    [self expectationForPredicate:exists evaluatedWithObject:jon handler:nil];
+    [self expectationForPredicate:exists evaluatedWithObject:rhaegar handler:nil];
+    
+    XCUICoordinate *rhaegarCoord = [rhaegar coordinateWithNormalizedOffset:CGVectorMake(0, 0)];
+    XCUICoordinate *jonCoord = [jon coordinateWithNormalizedOffset:CGVectorMake(0, 0)];
+    [rhaegarCoord pressForDuration:0.3 thenDragToCoordinate:jonCoord];
+    
+    [self expectationForPredicate:exists evaluatedWithObject:tablesQuery.staticTexts[@"Cersei Lannister"] handler:nil];
+    
+    [self waitForExpectationsWithTimeout:15 handler:nil];
+    [[XCUIDevice sharedDevice] pressButton:XCUIDeviceButtonHome];
+   
 }
 
 @end

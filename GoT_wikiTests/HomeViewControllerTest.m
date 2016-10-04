@@ -15,18 +15,21 @@
 @interface HomeViewControllerTest : XCTestCase
 
 @property HomeViewController *vc;
+@property UITableView *tableView;
 
 @end
 
 @implementation HomeViewControllerTest
 
 @synthesize vc;
+@synthesize tableView;
 
 - (void)setUp {
     [super setUp];
     HomeViewController *newVC = [[HomeViewController alloc] init];
     UIView *view = [[NSBundle mainBundle] loadNibNamed:@"HomeViewController" owner:newVC options:nil];
     [newVC viewDidLoad];
+    [self setTableView:[newVC tableView]];
     [self setVc:newVC];
 }
 
