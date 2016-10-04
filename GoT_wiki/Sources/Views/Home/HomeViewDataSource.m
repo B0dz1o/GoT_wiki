@@ -54,6 +54,7 @@
         dispatch_async(dispatch_get_main_queue(), ^{
             [[[self ownerVC] tableView] reloadData];
         });
+        [[self ownerVC] stopLoadingIndicator];
     };
 }
 
