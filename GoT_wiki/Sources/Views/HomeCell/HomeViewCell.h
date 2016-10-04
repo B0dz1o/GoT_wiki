@@ -13,6 +13,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *image;
 @property (weak, nonatomic) IBOutlet UILabel *title;
 @property (weak, nonatomic) IBOutlet UILabel *characterDescription;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *imageLoading;
 
 
 @end

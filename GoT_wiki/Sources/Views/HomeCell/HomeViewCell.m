@@ -13,5 +13,6 @@
 @synthesize image;
 @synthesize title;
 @synthesize characterDescription;
+@synthesize imageLoading;
 
 @end

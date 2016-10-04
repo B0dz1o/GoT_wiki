@@ -66,6 +66,13 @@
 -(HomeViewCell *)configCell:(HomeViewCell *)cell for:(NSIndexPath *)indexPath {
     CharacterItem *character = [[proxy characters] objectAtIndex:[indexPath row]];
     UIImage *img = [[proxy images] objectForKey:[NSString stringWithFormat:@"%d", [indexPath row]]];
+    if (img == nil){
+        [[cell imageLoading] setHidden:false];
+        [[cell imageLoading] startAnimating];
+    } else {
+        [[cell imageLoading] setHidden:true];
+        [[cell imageLoading] stopAnimating];
+    }
     [[cell title] setText:[character title]];
     [[cell characterDescription] setText:[character abstract]];
     [[cell image] setImage:img];
