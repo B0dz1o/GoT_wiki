@@ -24,7 +24,9 @@
 
 - (void)setUp {
     [super setUp];
-    HomeViewController *newVC = [[HomeViewController alloc] initWithNibName:@"HomeViewController" bundle:nil];
+    HomeViewController *newVC = [[HomeViewController alloc] init];
+    UIView *view = [[NSBundle mainBundle] loadNibNamed:@"HomeViewController" owner:newVC options:nil];
+    [newVC viewDidLoad];
     [self setVc:newVC];
 }
 
@@ -38,21 +40,19 @@
 
 - (void) testTableViewConfig {
     UITableView *tableView = [[self vc] tableView];
-    [[self vc] viewDidLoad];
     XCTAssertTrue([[tableView delegate] isKindOfClass:[HomeViewDelegate class]]);
     XCTAssertTrue([[tableView dataSource] isKindOfClass:[HomeViewDataSource class]]);
 }
 
 - (void) testDelegate {
     UITableView *tableView = [[self vc] tableView];
-    [[self vc] viewDidLoad];
     [[tableView delegate] tableView:tableView didSelectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
 }
 
 - (void) testHomeViewPerformance {
     [self measureBlock:^{
+        UITableView *tableView = [[self vc] tableView];
         for (int j = 0; j < 10; ++j){
-            UITableView *tableView = [[self vc] tableView];
             for (int i = 0; i < 100 ; ++i) {
                 NSIndexPath * indexPath = [NSIndexPath indexPathForRow:i inSection:0];
                 [tableView dequeueReusableCellWithIdentifier:@"HomeViewCell" forIndexPath:indexPath];

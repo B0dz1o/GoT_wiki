@@ -14,6 +14,8 @@
 
 @synthesize delegate;
 @synthesize dataSource;
+@synthesize tableView;
+@synthesize indicator;
 
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]){
@@ -41,6 +43,7 @@
     
     [tableView setRowHeight:UITableViewAutomaticDimension];
     [tableView setEstimatedRowHeight:70];
+    [self startLoadingIndicator];
 }
 
 - (void)reloadImage:(NSIndexPath *)indexPath {
@@ -52,6 +55,18 @@
             [[self tableView] reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
         });
     }
+}
+
+- (void) startLoadingIndicator {
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [[self indicator] startAnimating];
+    });
+}
+
+- (void) stopLoadingIndicator {
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [[self indicator] stopAnimating];
+    });
 }
 
 
