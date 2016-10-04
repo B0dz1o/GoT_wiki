@@ -24,8 +24,6 @@ typedef enum {
 ///Builder layer around NSURLSession initialization
 @property HTTPBuilder *builder;
 
-///Singleton access method
-+(instancetype) sharedObject;
 /**Abstract layer around server communication access
  @param type API call identifier
  @param handler Block to make use of server reponse data or error

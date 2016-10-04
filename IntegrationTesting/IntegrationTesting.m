@@ -24,7 +24,7 @@
 
 - (void)setUp {
     [super setUp];
-    [self setFactory:[RequestFactory sharedObject]];
+    [self setFactory:[[RequestFactory alloc] init]];
     [self setBuilder:[[HTTPBuilder alloc] init]];
 }
 
@@ -35,7 +35,7 @@
 - (void) testFactoryCalls {
     XCTestExpectation * expectCharacters = [self expectationWithDescription:@"expectCharacters"];
     XCTestExpectation * expectAbsolute = [self expectationWithDescription:@"expectAbsolute"];
-    [[factory runTask:CHARACTER_LIST withHandler:^(NSData * d, NSURLResponse *r , NSError * e){
+    [[[self factory] runTask:CHARACTER_LIST withHandler:^(NSData * d, NSURLResponse *r , NSError * e){
         if (e == nil){
             [expectCharacters fulfill];
         }

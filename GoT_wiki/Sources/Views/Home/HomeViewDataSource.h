@@ -17,6 +17,7 @@
 
 @property DataProxy *proxy;
 @property (weak) HomeViewController * ownerVC;
+@property BOOL dataLoaded;
 
 - (void) startDownloadingData;
 - (void) callDataReload;

@@ -49,7 +49,8 @@
 
 - (void) testDelegate {
     UITableView *tableView = [[self vc] tableView];
-    [[tableView delegate] tableView:tableView didSelectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+    XCTAssertNoThrow([[tableView delegate] tableView:tableView didSelectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]]);
+    XCTAssertNoThrow([[[[HomeViewController alloc] init] dataSource] reloadImage:0]);
 }
 
 - (void) testHomeViewPerformance {
