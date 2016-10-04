@@ -31,13 +31,7 @@
     [labelStaticText swipeDown];
     [labelStaticText swipeUp];
     [labelStaticText doubleTap];
-    [[XCUIDevice sharedDevice] pressButton:XCUIDeviceButtonHome];
-    
-//    XCUIElementQuery *tablesQuery = [[XCUIApplication alloc] init].tables;
-//    [tablesQuery.staticTexts[@"Daenerys Targaryen"] tap];
-//    [tablesQuery.staticTexts[@"Rhaegar Targaryen"] tap];
-//    [tablesQuery.staticTexts[@"Jon Snow"] tap];
-    
+    [[XCUIDevice sharedDevice] pressButton:XCUIDeviceButtonHome];   
 }
 
 @end
