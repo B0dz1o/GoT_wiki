@@ -35,7 +35,6 @@
         XCTAssertNil(e);
         XCTAssertTrue([[r textEncodingName] isEqualToString:@"utf-8"]);
         WholeResponse *whRes = [[WholeResponse alloc] initWithData:d error:nil];
-        NSLog(@"%d", [[whRes items] count]);
         [ex fulfill];
     }];
     [ds startDownloadingData];

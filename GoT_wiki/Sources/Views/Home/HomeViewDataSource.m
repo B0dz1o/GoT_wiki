@@ -10,10 +10,10 @@
 #import "HomeViewCell.h"
 #import "RequestFactory.h"
 #import "WholeResponse.h"
+#import "HomeViewController.h"
 
 @implementation HomeViewDataSource
 
-@synthesize characters;
 @synthesize ownerVC;
 @synthesize proxy;
 
@@ -30,7 +30,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [[self characters] count];
+    return [[[self proxy] characters] count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -43,15 +43,32 @@
     return NO;
 }
 
+#pragma mark Proxy handling
+
 - (void)startDownloadingData {
     [[self proxy] startDownloadingData];
 }
 
+- (void)callDataReload {
+    if ([[self ownerVC] isViewLoaded]){
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [[[self ownerVC] tableView] reloadData];
+        });
+    };
+}
+
+- (void)reloadImage:(NSUInteger)index {
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:index inSection:0];
+    [[self ownerVC] reloadImage:indexPath];
+}
+
 #pragma mark Cell configuration
 -(HomeViewCell *)configCell:(HomeViewCell *)cell for:(NSIndexPath *)indexPath {
-    CharacterItem *character = [characters objectAtIndex:[indexPath row]];
+    CharacterItem *character = [[proxy characters] objectAtIndex:[indexPath row]];
+    UIImage *img = [[proxy images] objectForKey:[NSString stringWithFormat:@"%d", [indexPath row]]];
     [[cell title] setText:[character title]];
     [[cell characterDescription] setText:[character abstract]];
+    [[cell image] setImage:img];
     return cell;
 }
 

@@ -43,6 +43,12 @@
     XCTAssertTrue([[tableView dataSource] isKindOfClass:[HomeViewDataSource class]]);
 }
 
+- (void) testDelegate {
+    UITableView *tableView = [[self vc] tableView];
+    [[self vc] viewDidLoad];
+    [[tableView delegate] tableView:tableView didSelectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+}
+
 - (void) testHomeViewPerformance {
     [self measureBlock:^{
         for (int j = 0; j < 10; ++j){

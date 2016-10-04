@@ -11,13 +11,15 @@
 #import "WholeResponse.h"
 #import "DataProxy.h"
 
+@class HomeViewController;
+
 @interface HomeViewDataSource : NSObject <UITableViewDataSource>
 
-@property NSArray <CharacterItem *> *characters;
-@property (weak) UITableViewController * ownerVC;
-@property NSString * baseURL;
 @property DataProxy *proxy;
+@property (weak) HomeViewController * ownerVC;
 
 - (void) startDownloadingData;
+- (void) callDataReload;
+- (void) reloadImage: (NSUInteger)index;
 
 @end

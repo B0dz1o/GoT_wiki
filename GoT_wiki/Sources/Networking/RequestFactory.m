@@ -50,12 +50,14 @@
 }
 
 - (NSURLSessionDataTask *)runAbsoluteUrl:(NSString *)absUrl withHandler:(void (^)(NSData *, NSURLResponse *, NSError *))handler {
-    return [[builder useRequestHandler:handler] buildTaskWithURL:absUrl];
+    HTTPBuilder *builder2 = [[HTTPBuilder alloc] init];
+    return [[builder2 useRequestHandler:handler] buildTaskWithURL:absUrl];
 }
 
 - (NSURLSessionDataTask *)runAbsoluteUrlSecured:(NSString *)absUrl withHandler:(void (^)(NSData *, NSURLResponse *, NSError *))handler {
+    [absUrl stringByReplacingOccurrencesOfString:@"http://" withString:@"https://"];
     NSString * securedURL = [absUrl stringByReplacingOccurrencesOfString:@"http://" withString:@"https://"];
-    return [self runAbsoluteUrlSecured:securedURL withHandler:handler];
+    return [self runAbsoluteUrl:securedURL withHandler:handler];
 }
 
 

@@ -107,16 +107,11 @@
     }];
 }
 
-- (void) testIntegration {
-    XCTestExpectation * expect = [self expectationWithDescription:@"API_response"];
-    void (^handler)(NSData * d, NSURLResponse *r , NSError * e) = ^(NSData * d, NSURLResponse *r , NSError * e){
-        if (e != nil){
-            return;
-        }
-        [expect fulfill];
-    };
-    [[factory runTask:CHARACTER_LIST withHandler:handler] resume];
-    [self waitForExpectationsWithTimeout:10 handler:nil];
+- (void) testSecuredCall {
+    NSString * jonSnowURL = @"http://vignette3.wikia.nocookie.net/gameofthrones/images/4/49/Battle_of_the_Bastards_08.jpg/revision/latest/window-crop/width/200/x-offset/0/y-offset/0/window-width/2700/window-height/2700?cb=20160615184845";
+    NSString *transformedURL = [[[[factory runAbsoluteUrlSecured:jonSnowURL withHandler:^(NSData *d, NSURLResponse *r, NSError *e) {}]
+                                 currentRequest] URL] absoluteString];
+    XCTAssertTrue([transformedURL isEqualToString: @"https://vignette3.wikia.nocookie.net/gameofthrones/images/4/49/Battle_of_the_Bastards_08.jpg/revision/latest/window-crop/width/200/x-offset/0/y-offset/0/window-width/2700/window-height/2700?cb=20160615184845"]);
 }
 
 @end

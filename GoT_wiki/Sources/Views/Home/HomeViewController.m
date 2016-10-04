@@ -43,5 +43,16 @@
     [tableView setEstimatedRowHeight:70];
 }
 
+- (void)reloadImage:(NSIndexPath *)indexPath {
+    if (![self isViewLoaded]){
+        return;
+    }
+    if ([[[self tableView] indexPathsForVisibleRows] containsObject:indexPath]){
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [[self tableView] reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
+        });
+    }
+}
+
 
 @end
