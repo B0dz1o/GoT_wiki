@@ -16,6 +16,7 @@
 
 @synthesize ownerVC;
 @synthesize proxy;
+@synthesize dataLoaded;
 
 - (instancetype)init {
     if (self = [super init]){
@@ -46,15 +47,17 @@
 #pragma mark Proxy handling
 
 - (void)startDownloadingData {
+    [self setDataLoaded:false];
     [[self proxy] startDownloadingData];
 }
 
 - (void)callDataReload {
+    [self setDataLoaded:true];
     if ([[self ownerVC] isViewLoaded]){
         dispatch_async(dispatch_get_main_queue(), ^{
             [[[self ownerVC] tableView] reloadData];
+            [[self ownerVC] stopLoadingIndicator];
         });
-        [[self ownerVC] stopLoadingIndicator];
     };
 }
 

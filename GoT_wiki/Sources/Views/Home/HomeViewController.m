@@ -43,7 +43,9 @@
     
     [tableView setRowHeight:UITableViewAutomaticDimension];
     [tableView setEstimatedRowHeight:70];
-    [self startLoadingIndicator];
+    if (![[self dataSource] dataLoaded]) {
+        [self startLoadingIndicator];
+    }
 }
 
 - (void)reloadImage:(NSIndexPath *)indexPath {
