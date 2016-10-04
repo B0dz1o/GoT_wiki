@@ -15,6 +15,7 @@
 @interface HomeViewControllerTest : XCTestCase
 
 @property HomeViewController *vc;
+@property UITableView *tableview;
 
 @end
 
@@ -28,6 +29,7 @@
     UIView *view = [[NSBundle mainBundle] loadNibNamed:@"HomeViewController" owner:newVC options:nil];
     [newVC viewDidLoad];
     [self setVc:newVC];
+    [self setTableview:[newVC tableView]];
 }
 
 - (void) testCellCreation {
@@ -46,7 +48,8 @@
 
 - (void) testDelegate {
     UITableView *tableView = [[self vc] tableView];
-    [[tableView delegate] tableView:tableView didSelectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+    XCTAssertNoThrow([[tableView delegate] tableView:tableView didSelectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]]);
+    XCTAssertNoThrow([[[[HomeViewController alloc] init] dataSource] reloadImage:0]);
 }
 
 - (void) testHomeViewPerformance {

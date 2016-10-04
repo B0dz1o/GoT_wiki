@@ -24,18 +24,12 @@
 
 - (void)setUp {
     [super setUp];
-    [self setFactory:[RequestFactory sharedObject]];
+    [self setFactory:[[RequestFactory alloc] init]];
     [self setBuilder:[[HTTPBuilder alloc] init]];
 }
 
 - (void)tearDown {
     [super tearDown];
-}
-
-- (void)testSingleton {
-    XCTAssertNotNil([self factory]);
-    RequestFactory * anotherFactory = [RequestFactory sharedObject];
-    XCTAssertEqual([self factory], anotherFactory);
 }
 
 - (void)testFactoryCreation {

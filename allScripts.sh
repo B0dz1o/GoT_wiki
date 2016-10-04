@@ -41,6 +41,7 @@ echo ''
 travis_time_finish
 if [ $CODE -ne 0 ];
 then
+	echo $CODE
 	exit 1
 fi
 
@@ -54,6 +55,7 @@ echo ''
 travis_time_finish
 if [ $CODE -ne 0 ];
 then
+	echo $CODE
 	exit 1
 fi
 

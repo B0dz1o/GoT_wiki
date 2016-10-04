@@ -19,17 +19,6 @@
     return self;
 }
 
-+ (instancetype)sharedObject {
-    static RequestFactory * factory;
-    static dispatch_once_t token;
-    dispatch_once(&token, ^(){
-        if (factory == nil) {
-            factory = [[RequestFactory alloc] init];
-        }
-    });
-    return factory;
-}
-
 - (NSURLSessionDataTask *)runTask:(RequestTypes)type withHandler:(void (^)(NSData *, NSURLResponse *, NSError *))handler {
     NSURLSessionDataTask* task;
     [[self builder] useDefaultBaseURL];

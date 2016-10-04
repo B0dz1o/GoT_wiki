@@ -23,7 +23,7 @@
     if ([self requestHandler] == nil) {
         [self defaultHandler];
     }
-    [[[RequestFactory sharedObject] runTask:CHARACTER_LIST withHandler:[self requestHandler]] resume];
+    [[[[RequestFactory alloc] init] runTask:CHARACTER_LIST withHandler:[self requestHandler]] resume];
 }
 
 - (void) parseData: (NSData *) data fromResponse: (NSURLResponse *) response {
@@ -57,7 +57,7 @@
     NSUInteger limit = [[self characters] count];
     images = [NSMutableDictionary dictionaryWithCapacity:limit];
     for (i = 0; i < limit ; ++i) {
-        [[[RequestFactory sharedObject] runAbsoluteUrlSecured:[[characters objectAtIndex:i] thumbnail] withHandler:
+        [[[[RequestFactory alloc] init] runAbsoluteUrlSecured:[[characters objectAtIndex:i] thumbnail] withHandler:
          ^(NSData *d, NSURLResponse *r, NSError *e) {
              if (e != nil){
                  return;
