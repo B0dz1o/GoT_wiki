@@ -15,4 +15,6 @@
 @property HomeViewDelegate * delegate;
 @property HomeViewDataSource * dataSource;
 
+-(void)reloadImage: (NSIndexPath*) indexPath;
+
 @end

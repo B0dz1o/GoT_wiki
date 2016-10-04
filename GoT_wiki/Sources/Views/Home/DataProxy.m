@@ -64,6 +64,7 @@
              }
              UIImage *img = [UIImage imageWithData:d];
              [images setObject:img forKey:[NSString stringWithFormat:@"%d", i]];
+             [ownerDS reloadImage:i];
         }] resume];
     }
 }

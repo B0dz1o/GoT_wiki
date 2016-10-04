@@ -10,6 +10,7 @@
 #import "HomeViewCell.h"
 #import "RequestFactory.h"
 #import "WholeResponse.h"
+#import "HomeViewController.h"
 
 @implementation HomeViewDataSource
 
@@ -54,6 +55,11 @@
             [[[self ownerVC] tableView] reloadData];
         });
     };
+}
+
+- (void)reloadImage:(NSUInteger)index {
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:index inSection:0];
+    [[self ownerVC] reloadImage:indexPath];
 }
 
 #pragma mark Cell configuration
