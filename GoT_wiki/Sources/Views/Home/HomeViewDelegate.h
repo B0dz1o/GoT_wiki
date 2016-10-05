@@ -9,6 +9,12 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+@class HomeViewController;
+
 @interface HomeViewDelegate : NSObject <UITableViewDelegate>
+
+@property (weak) HomeViewController *ownerVC;
+
+- (IBAction)didLongTap:(UILongPressGestureRecognizer *)sender;
 
 @end

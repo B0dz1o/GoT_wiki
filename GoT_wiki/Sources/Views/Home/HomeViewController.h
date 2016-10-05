@@ -16,9 +16,11 @@
 @property HomeViewDataSource * dataSource;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *indicator;
+@property (strong, nonatomic) IBOutlet UILongPressGestureRecognizer *longPress;
 
 -(void)reloadImage: (NSIndexPath*) indexPath;
 -(void) startLoadingIndicator;
 -(void) stopLoadingIndicator;
+-(void) changeCollapseStatusFor: (NSIndexPath *) indexPath;
 
 @end
