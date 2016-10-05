@@ -10,9 +10,6 @@
 #define FULL_DISPLAY 0
 
 #import "HomeViewDataSource.h"
-#import "HomeViewCell.h"
-#import "RequestFactory.h"
-#import "WholeResponse.h"
 #import "HomeViewController.h"
 
 @implementation HomeViewDataSource

@@ -10,6 +10,9 @@
 #import <UIKit/UIKit.h>
 #import "WholeResponse.h"
 #import "DataProxy.h"
+#import "HomeViewCell.h"
+#import "RequestFactory.h"
+#import "WholeResponse.h"
 
 @class HomeViewController;
 

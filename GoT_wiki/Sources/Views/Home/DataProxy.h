@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "CharacterItem.h"
+#import "RequestFactory.h"
+#import "WholeResponse.h"
 
 @class HomeViewDataSource;
 
