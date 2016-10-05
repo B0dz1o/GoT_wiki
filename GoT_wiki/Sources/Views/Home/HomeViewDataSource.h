@@ -21,10 +21,11 @@
 @property DataProxy *proxy;
 @property (weak) HomeViewController * ownerVC;
 @property BOOL dataLoaded;
+@property NSMutableSet <NSIndexPath *> * expandedCells;
 
 - (void) startDownloadingData;
 - (void) callDataReload;
 - (void) reloadImage: (NSUInteger)index;
-- (void) changeCollapseStatusFor: (NSUInteger) index;
+- (void) changeCollapseStatusFor: (NSIndexPath *) indexPath;
 
 @end

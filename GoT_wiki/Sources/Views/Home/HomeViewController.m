@@ -80,7 +80,7 @@
 #pragma mark Gesture handling
 
 - (void)changeCollapseStatusFor:(NSIndexPath *)indexPath {
-    [[self dataSource] changeCollapseStatusFor:[indexPath row]];
+    [[self dataSource] changeCollapseStatusFor:indexPath];
     dispatch_async(dispatch_get_main_queue(), ^{
         [[self tableView] reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
     });

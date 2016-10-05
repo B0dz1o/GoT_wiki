@@ -17,11 +17,13 @@
 @synthesize ownerVC;
 @synthesize proxy;
 @synthesize dataLoaded;
+@synthesize expandedCells;
 
 - (instancetype)init {
     if (self = [super init]){
         [self setProxy:[[DataProxy alloc] init]];
         [[self proxy] setOwnerDS:self];
+        [self setExpandedCells:[NSMutableSet set]];
     }
     return self;
 }
@@ -53,6 +55,7 @@
 
 - (void)callDataReload {
     [self setDataLoaded:true];
+    [self setExpandedCells:[NSMutableSet setWithCapacity:[[[self proxy] characters] count]]];
     if ([[self ownerVC] isViewLoaded]){
         dispatch_async(dispatch_get_main_queue(), ^{
             [[[self ownerVC] tableView] reloadData];
@@ -77,14 +80,23 @@
         [[cell imageLoading] setHidden:true];
         [[cell imageLoading] stopAnimating];
     }
+    if ([[self expandedCells] containsObject:indexPath]) {
+        [[cell characterDescription] setNumberOfLines:FULL_DISPLAY];
+    } else {
+        [[cell characterDescription] setNumberOfLines:COLLAPSED];
+    }
     [[cell title] setText:[character title]];
     [[cell characterDescription] setText:[character abstract]];
     [[cell image] setImage:img];
     return cell;
 }
 
-- (void)changeCollapseStatusFor:(NSUInteger)index {
-    
+- (void)changeCollapseStatusFor:(NSIndexPath *)indexPath {
+    if ([[self expandedCells] containsObject:indexPath]) {
+        [[self expandedCells] removeObject:indexPath];
+    } else {
+        [[self expandedCells] addObject:indexPath];
+    }
 }
 
 
