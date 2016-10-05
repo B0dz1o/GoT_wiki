@@ -6,6 +6,9 @@
 //  Copyright © 2016 Piotr Bogdan. All rights reserved.
 //
 
+#define COLLAPSED 2
+#define FULL_DISPLAY 0
+
 #import "HomeViewDataSource.h"
 #import "HomeViewCell.h"
 #import "RequestFactory.h"
@@ -81,6 +84,10 @@
     [[cell characterDescription] setText:[character abstract]];
     [[cell image] setImage:img];
     return cell;
+}
+
+- (void)changeCollapseStatusFor:(NSUInteger)index {
+    
 }
 
 

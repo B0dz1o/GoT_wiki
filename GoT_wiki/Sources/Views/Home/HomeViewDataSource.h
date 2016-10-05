@@ -22,5 +22,6 @@
 - (void) startDownloadingData;
 - (void) callDataReload;
 - (void) reloadImage: (NSUInteger)index;
+- (void) changeCollapseStatusFor: (NSUInteger) index;
 
 @end
