@@ -7,8 +7,6 @@
 //
 
 #import "DataProxy.h"
-#import "RequestFactory.h"
-#import "WholeResponse.h"
 #import "HomeViewDataSource.h"
 
 @implementation DataProxy

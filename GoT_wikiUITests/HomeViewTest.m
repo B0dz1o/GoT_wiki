@@ -45,4 +45,31 @@
    
 }
 
+- (void)testExpanding {
+    XCUIElementQuery *tablesQuery = [[XCUIApplication alloc] init].tables;
+    XCUIElement *dany = tablesQuery.staticTexts[@"Daenerys Targaryen"];
+    XCUIElement *rhaegar = tablesQuery.staticTexts[@"Rhaegar Targaryen"];
+    
+    NSPredicate *exists = [NSPredicate predicateWithFormat:@"exists == 1"];
+    [self expectationForPredicate:exists evaluatedWithObject:dany handler:nil];
+    [self expectationForPredicate:exists evaluatedWithObject:rhaegar handler:nil];
+    [self waitForExpectationsWithTimeout:15 handler:nil];
+    
+    XCUIElement *rhaegarDesc = tablesQuery.staticTexts[@"Prince Rhaegar Targaryen is an unseen character in Game of Thrones. He is deceased when the..."];
+    [self expectationForPredicate:exists evaluatedWithObject:dany handler:nil];
+    [self waitForExpectationsWithTimeout:15 handler:nil];
+    
+    [rhaegarDesc pressForDuration:1.0];
+    [rhaegarDesc tap];
+    [rhaegarDesc pressForDuration:1.0];
+    
+    [rhaegar pressForDuration:1.0];
+    [rhaegar tap];
+    [rhaegar pressForDuration:1.0];
+    
+    [[XCUIDevice sharedDevice] pressButton:XCUIDeviceButtonHome];
+    
+    
+}
+
 @end

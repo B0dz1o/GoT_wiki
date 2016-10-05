@@ -16,13 +16,15 @@
 @synthesize dataSource;
 @synthesize tableView;
 @synthesize indicator;
+@synthesize longPress;
 
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]){
         [self setDataSource:[[HomeViewDataSource alloc] init]];
         [[self dataSource] setOwnerVC:self];
-        [self setDelegate:[[HomeViewDelegate alloc] init]];
         [[self dataSource] startDownloadingData];
+        [self setDelegate:[[HomeViewDelegate alloc] init]];
+        [[self delegate] setOwnerVC:self];
     }
     return self;
 }
@@ -46,8 +48,12 @@
     if (![[self dataSource] dataLoaded]) {
         [self startLoadingIndicator];
     }
+    
+    [[self longPress] addTarget:[self delegate] action:NSSelectorFromString(@"didLongTap:")];
 }
 
+
+#pragma mark Data loading
 - (void)reloadImage:(NSIndexPath *)indexPath {
     if (![self isViewLoaded]){
         return;
@@ -68,6 +74,15 @@
 - (void) stopLoadingIndicator {
     dispatch_async(dispatch_get_main_queue(), ^{
         [[self indicator] stopAnimating];
+    });
+}
+
+#pragma mark Gesture handling
+
+- (void)changeCollapseStatusFor:(NSIndexPath *)indexPath {
+    [[self dataSource] changeCollapseStatusFor:indexPath];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [[self tableView] reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
     });
 }
 
