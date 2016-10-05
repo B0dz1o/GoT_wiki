@@ -5,7 +5,7 @@ xcodebuild test \
  -workspace "GoT_wiki.xcworkspace" \
  -scheme travisUI \
  -destination 'platform=iOS Simulator,name=iPhone 5S,OS=9.3' \
- ONLY_ACTIVE_ARCH=NO |xcpretty
+ |xcpretty
 CODE=$?
 if [ $CODE -ne 0 ];
 then
