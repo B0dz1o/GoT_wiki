@@ -26,15 +26,22 @@
 
 - (void)setUp {
     [super setUp];
-    HomeViewController *newVC = [[HomeViewController alloc] init];
-    UIView *view = [[NSBundle mainBundle] loadNibNamed:@"HomeViewController" owner:newVC options:nil];
+    HomeViewController *newVC = [[HomeViewController alloc] initWithNibName:@"HomeViewController" bundle:[NSBundle mainBundle]];
+    [newVC loadView];
     [newVC viewDidLoad];
+
+    NSPredicate *loadedView = [NSPredicate predicateWithFormat:@"isViewLoaded == true"];
+    NSPredicate *tableViewNotNil = [NSPredicate predicateWithFormat:@"tableView != nil"];
+
+    [self expectationForPredicate:loadedView evaluatedWithObject:newVC handler:nil];
+    [self expectationForPredicate:tableViewNotNil evaluatedWithObject:newVC handler:nil];
+    [self waitForExpectationsWithTimeout:2 handler:nil];
+
     [self setTableView:[newVC tableView]];
-    [self setVc:newVC];
 }
 
 - (void) testCellCreation {
-    UITableView *tableView = [[self vc] tableView];
+    UITableView *tableView = [self tableView];
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"HomeViewCell"];
     UITableViewCell *nilCell = [tableView dequeueReusableCellWithIdentifier:@"UNKNOWN"];
     XCTAssertTrue([cell isKindOfClass:[HomeViewCell class]]);
@@ -42,20 +49,20 @@
 }
 
 - (void) testTableViewConfig {
-    UITableView *tableView = [[self vc] tableView];
+    UITableView *tableView = [self tableView];
     XCTAssertTrue([[tableView delegate] isKindOfClass:[HomeViewDelegate class]]);
     XCTAssertTrue([[tableView dataSource] isKindOfClass:[HomeViewDataSource class]]);
 }
 
 - (void) testDelegate {
-    UITableView *tableView = [[self vc] tableView];
+    UITableView *tableView = [self tableView];
     XCTAssertNoThrow([[tableView delegate] tableView:tableView didSelectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]]);
     XCTAssertNoThrow([[[[HomeViewController alloc] init] dataSource] reloadImage:0]);
 }
 
 - (void) testHomeViewPerformance {
     [self measureBlock:^{
-        UITableView *tableView = [[self vc] tableView];
+        UITableView *tableView = [self tableView];
         for (int j = 0; j < 10; ++j){
             for (int i = 0; i < 100 ; ++i) {
                 NSIndexPath * indexPath = [NSIndexPath indexPathForRow:i inSection:0];
